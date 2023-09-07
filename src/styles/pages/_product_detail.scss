@@ -1,0 +1,51 @@
+.product-detail {
+  margin-bottom: emCal(16, 100);
+  &__wrapper {
+    padding-bottom: emCal(16, 100);
+    border-bottom: 1px solid setShadeColor(light);
+    .product-detail__slide-two {
+      @include mq(md) {
+        margin-bottom: emCal(16, 70);
+      }
+    }
+  }
+
+  &__content {
+    &__product-details {
+      @include typo($fsz: emCal(16, 13), $color: setShadeColor(medium));
+      padding-bottom: 1rem;
+      line-height: emCal(15, 25);
+
+      ul {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+    &__price-explainer {
+      margin-top: emCal(16, 40);
+      line-height: emCal(15, 25);
+    }
+    &__footer {
+      .product_description {
+        margin-top: emCal(16, 16);
+        margin-bottom: emCal(16, 40);
+        line-height: emCal(15, 25);
+        p {
+          @include typo($fsz: emCal(16, 15), $lh: emCal(15, 27));
+        }
+      }
+
+      .product_promo {
+        color: #744955;
+        font-weight: bold;
+        margin-top: emCal(16, 16);
+        margin-bottom: emCal(16, 40);
+        line-height: emCal(15, 25);
+        p {
+          @include typo($fsz: emCal(16, 15), $lh: emCal(15, 27));
+        }
+      }
+    }
+  }
+}

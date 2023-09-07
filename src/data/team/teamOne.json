@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "image": "/shop/assets/images/team/teamOne/1.png",
+    "name": "Valeriya",
+    "position": "Chief Aesthetics Officer",
+    "quote": "Ipsum dolor amet, consectetur adipiscing sedo lacus facilisis."
+  },
+  {
+    "id": 2,
+    "image": "/shop/assets/images/team/teamOne/2.png",
+    "name": "Kristin",
+    "position": "Lead Aesthetician",
+    "quote": "Ipsum dolor amet, consectetur adipiscing sedo lacus facilisis."
+  },
+  {
+    "id": 3,
+    "image": "/shop/assets/images/team/teamOne/3.png",
+    "name": "Jeannette",
+    "position": "Lead Aesthetician",
+    "quote": "Ipsum dolor amet, consectetur adipiscing sedo lacus facilisis."
+  }
+]

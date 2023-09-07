@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.hhh {
+    @apply text-[#e94747];
+}
+
+.container {
+    @apply max-w-[1156px] px-[8px] mx-auto max-[992px]:px-[24px];
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Booking", 
+    "to": "#"
+  },
+  { "title": "Shop", 
+    "to": "/shop" 
+  },
+
+  { "title": "Why Us", 
+    "to": "/why-us" 
+  },
+  {
+    "title": "Menu",
+    "to": "/menu"
+  },
+  { "title": "Gift Cards", 
+    "to": "/gift-cards" 
+  },
+  { "title": "Lashes", 
+    "to": "/lashes" 
+  },
+  { "title": "DMK", 
+    "to": "/dmk" 
+  },
+  { "title": "HydraFacial", 
+    "to": "/hydraFacial" 
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "subTitle": {
+    "main": "Skinnovation",
+    "span": "Shop"
+  },
+  "title": {
+    "main": "Carefully selected",
+    "span": "Home skincare innovations"
+  },
+  "image1": {
+    "alt": "Carefully selected Home skincare innovations",
+    "src": "https://res.cloudinary.com/skinnovation/image/upload/w_500,q_70/v1615148324/shop/dmk.webp"
+  },
+  "image2": {
+    "alt": "Carefully selected Home skincare innovations",
+    "src": "https://res.cloudinary.com/skinnovation/image/upload/h_500,q_70/v1669262185/shop/ALIN9004.webp"
+  },
+  "background1": {
+    "alt": "Carefully selected Home skincare innovations",
+    "src": "/shop/assets/images/introduction/IntroductionOne/bg1.png"
+  },
+  "background2": {
+    "alt": "Carefully selected Home skincare innovations",
+    "src": "/shop/assets/images/introduction/IntroductionOne/bg2.png"
+  },
+  "description": "Trying to find a home skincare device that works can be tedious and overwhelming. That's why we created a curated selection of the gadgets that we believe will enhance results from your home regimen prescribed by one of the Skinnovation Clinic estheticians.",
+  "btn": {
+    "content": "Check out our gadgets",
+    "action": "/gadgets",
+    "color": "red"
+  }
+}

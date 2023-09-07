@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Home",
+    "to": "#"
+  },
+  {
+    "title": "Treatments",
+    "to": "/treatments"
+  }
+]

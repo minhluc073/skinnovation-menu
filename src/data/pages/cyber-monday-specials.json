@@ -1,0 +1,26 @@
+[
+  {
+    "title": "20% off all awesome skincare gadgets!",
+    "description": "Trying to find a home skincare device that works can be tedious and overwhelming. That's why we created a curated selection of the gadgets that we believe will enhance results from your home regimen prescribed by one of the Skinnovation Clinic estheticians.",
+    "bigImgSrc": "https://res.cloudinary.com/skinnovation/image/upload/w_600,q_40/v1615148880/shop/gadgets.jpg",
+    "smallImgSrc": "",
+    "ctaTitle": "See our gadgets",
+    "ctaLink": "/gadgets"
+  },
+  {
+    "title": "15% off when buying 3 or more skincare products of any skincare line!",
+    "description": "",
+    "bigImgSrc": "https://res.cloudinary.com/skinnovation/image/upload/w_600,q_40/v1615148324/shop/dmk.jpg",
+    "smallImgSrc": "",
+    "ctaTitle": "Our skincare products",
+    "ctaLink": "/skincare"
+  },
+  {
+    "title": "Buy 5 products of any skincare line and get a Skinnovation bag for free in addition to the 15% discount!",
+    "description": "",
+    "bigImgSrc": "https://res.cloudinary.com/skinnovation/image/upload/v1638126856/specials/skinnovation-bag.gif",
+    "smallImgSrc": "",
+    "ctaTitle": "Our skincare products",
+    "ctaLink": "/skincare"
+  }
+]

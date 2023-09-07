@@ -1,0 +1,70 @@
+[
+  {
+    "title": {
+      "main": "Introducing Meder Skincare"
+    },
+    "subTitle": "Award-winning skincare loved by skincare enthusiasts all over the world.",
+    "image": "https://res.cloudinary.com/skinnovation/image/upload/v1688409301/meder-skincare_vwtaho.jpg",
+    "btn": {
+      "content": "Learn more",
+      "color": "red",
+      "url": "/meder"
+    },
+    "animationClass": {
+      "title": "slider-one-title",
+      "subtitle": "slider-one-subtitle",
+      "button": "slider-one-button"
+    }
+  },
+  {
+    "title": {
+      "main": "Introducing Noon Aesthetics"
+    },
+    "subTitle": "Binding Aesthetics and Science",
+    "image": "https://res.cloudinary.com/skinnovation/image/upload/w_1200,q_40/v1669755036/shop/noon.webp",
+    "btn": {
+      "content": "Learn more",
+      "color": "red",
+      "url": "/noon"
+    },
+    "animationClass": {
+      "title": "slider-one-title",
+      "subtitle": "slider-one-subtitle",
+      "button": "slider-one-button"
+    }
+  },
+  {
+    "title": {
+      "main": "Refill your home prescriptives"
+    },
+    "subTitle": "Home care",
+    "image": "https://res.cloudinary.com/skinnovation/image/upload/w_1200,q_40/v1615148324/shop/dmk.webp",
+    "btn": {
+      "content": "Pick your products",
+      "color": "red",
+      "url": "/skincare"
+    },
+    "animationClass": {
+      "title": "slider-one-title",
+      "subtitle": "slider-one-subtitle",
+      "button": "slider-one-button"
+    }
+  },
+  {
+    "title": {
+      "main": "Our amazing gadgets"
+    },
+    "subTitle": "Skincare innovation",
+    "image": "https://res.cloudinary.com/skinnovation/image/upload/w_1200,q_40/v1615148880/shop/gadgets.webp",
+    "btn": {
+      "content": "See all gadgets",
+      "color": "red",
+      "url": "/gadgets"
+    },
+    "animationClass": {
+      "title": "slider-one-title",
+      "subtitle": "slider-one-subtitle",
+      "button": "slider-one-button"
+    }
+  }
+]
