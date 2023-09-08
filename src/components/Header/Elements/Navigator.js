@@ -126,7 +126,7 @@ export default function Navigator({ disableSubmenu, className }) {
     );
   }
   return (
-    <div className={`navigator ${classNames(className)} max-[992px]:hidden`}>
+    <div className={`navigator ${classNames(className)} max-mb:hidden`}>
       <ul className="list-none flex items-center gap-6">{renderMenu()}</ul>
     </div>
   );

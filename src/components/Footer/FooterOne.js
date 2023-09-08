@@ -9,8 +9,8 @@ export default function FooterOne() {
   return (
     <div className="pt-10">
       <div className="container">
-        <div className="max-[768px]:flex-col flex justify-between items-center flex-wrap pb-10 mb-[50px] border-b-[1px] border-[#e1e1e1]">
-          <div className="max-[768px]:mb-[17px]">
+        <div className="max-md:flex-col flex justify-between items-center flex-wrap pb-10 mb-[50px] border-b-[1px] border-[#e1e1e1]">
+          <div className="max-md:mb-[17px]">
             <Link href="/">
               <a className="inline-block">
                 <img

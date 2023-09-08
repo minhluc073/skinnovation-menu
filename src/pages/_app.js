@@ -2,12 +2,12 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 import AppProvider from "@context/app-context";
-import "../../public/assets/font-icomoon/font-iconmoon.css";
+// import "../../public/assets/font-icomoon/font-iconmoon.css";
 import "@styles/styles.scss";
-import "@styles/tailwind.css";
+import "@styles/tailwind.scss";
 
 import { ToastContainer } from "react-toastify";
-// import ScrollToTop from 'react-scroll-to-top';
+import ScrollToTop from "react-scroll-to-top";
 import * as gtag from "../lib/gtag";
 
 const isProduction = process.env.NODE_ENV === "production";

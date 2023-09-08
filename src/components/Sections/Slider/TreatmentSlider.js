@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 export default function TreatmentSlider({ className }) {
   return (
-    <div className="flex items-center relative z-10 h-[280px] max-[768px]:hidden">
+    <div className="flex items-center relative z-10 h-[280px] max-md:hidden">
       <div className="container">
         <div className="absolute inset-0 z-[-1]">
           <img
@@ -14,7 +14,7 @@ export default function TreatmentSlider({ className }) {
             className="w-full h-full"
           />
         </div>
-        <h2 className="text-[64px] font-normal leading-[80px] text-white">
+        <h2 className="text-center text-[64px] font-normal leading-[80px] text-white">
           Treatment menu
         </h2>
       </div>

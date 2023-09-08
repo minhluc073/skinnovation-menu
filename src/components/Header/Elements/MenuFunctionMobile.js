@@ -15,9 +15,7 @@ export default function MenuFunctionMobile({ hide = [], ...props }) {
 
   return (
     <>
-      <div
-        className={`hidden max-[992px]:block ${classNames(props.className)}`}
-      >
+      <div className={`hidden max-mb:block ${classNames(props.className)}`}>
         <a
           href="#"
           className="menu-icon -navbar"

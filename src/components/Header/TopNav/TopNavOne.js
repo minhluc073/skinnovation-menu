@@ -4,7 +4,7 @@ import { renderContainer } from "../../../common/utils";
 
 export default function TopNavOne({ container }) {
   return (
-    <div className="bg-black py-[8px] max-[992px]:hidden">
+    <div className="bg-black py-[8px] max-mb:hidden">
       <div className={renderContainer(container)}>
         <div className="flex items-center justify-center">
           {/* <SocialIcons className="-white" /> */}
