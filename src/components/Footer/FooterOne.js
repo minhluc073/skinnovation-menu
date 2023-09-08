@@ -7,13 +7,17 @@ import footerInfomation from "../../data/footer/info.json";
 
 export default function FooterOne() {
   return (
-    <div className="footer-one">
+    <div className="pt-10">
       <div className="container">
-        <div className="footer-one__header">
-          <div className="footer-one__header__logo">
-            <Link href={"/homepages/homepage1"}>
-              <a>
-                <img src={"/shop/assets/images/logo.png"} alt="Logo" />
+        <div className="max-[768px]:flex-col flex justify-between items-center flex-wrap pb-10 mb-[50px] border-b-[1px] border-[#e1e1e1]">
+          <div className="max-[768px]:mb-[17px]">
+            <Link href="/">
+              <a className="inline-block">
+                <img
+                  src={"/assets/images/logo.png"}
+                  alt="Logo"
+                  className="w-[100px] h-full"
+                />
               </a>
             </Link>
           </div>
@@ -26,90 +30,31 @@ export default function FooterOne() {
               className="footer-one-newsletter"
             />
           </div> */}
-          <div className="footer-one__header__social">
-            <SocialIcons className="-border" />
-          </div>
+          <SocialIcons className="inline-flex gap-[10px]" />
         </div>
-        <div className="footer-one__body">
-          <div className="row">
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="footer__section -info">
-                <h5 className="footer-title">Contact info</h5>
-                <p>
-                  Address: <span>{footerInfomation.address}</span>
-                </p>
-                <p>
-                  Phone: <span>{footerInfomation.phone}</span>
-                </p>
-                <p>
-                  Email: <span>{footerInfomation.email}</span>
-                </p>
-                {/* <p>
+        <div className="pb-[50px]">
+          <h5 className="font-semibold">Contact info</h5>
+          <p className="text-[#888] font-normal text-[0.875em] leading-[1.7142857143em] mb-2.5">
+            Address:{" "}
+            <span className="text-black">{footerInfomation.address}</span>
+          </p>
+          <p className="text-[#888] font-normal text-[0.875em] leading-[1.7142857143em] mb-2.5">
+            Phone: <span className="text-black">{footerInfomation.phone}</span>
+          </p>
+          <p className="text-[#888] font-normal text-[0.875em] leading-[1.7142857143em]">
+            Email: <span className="text-black">{footerInfomation.email}</span>
+          </p>
+          {/* <p>
                   Opentime: <span>{footerInfomation.open}</span>
                 </p> */}
-              </div>
-            </div>
-            {/* TODO: footer <div className="col-12 col-md-6 col-lg-4">
-              <div className="footer__section -links">
-                <div className="row">
-                  <div className="col-12 col-sm-6">
-                    <h5 className="footer-title">Account</h5>
-                    <ul>
-                      {footerLinks.accountLinks.map((link, index) => (
-                        <li key={index}>
-                          <Link href={link.to}>
-                            <a>{link.name}</a>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="col-12 col-sm-6">
-                    <h5 className="footer-title">Infomation</h5>
-                    <ul>
-                      {footerLinks.informationLinks.map((link, index) => (
-                        <li key={index}>
-                          <Link href={link.to}>
-                            <a>{link.name}</a>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-            {/* TODO: footer <div className="col-12 col-lg-4">
-              <div className="footer__section -payment">
-                <h5 className="footer-title">Payment methods</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  gravida facilisis.{" "}
-                </p>
-                <div className="payment-methods">
-                  <img
-                    src={"/shop/assets/images/footer/payment.png"}
-                    alt="Payment methods"
-                  />
-                </div>
-              </div>
-            </div> */}
-          </div>
         </div>
       </div>
-      <div className="footer-one__footer">
+      <div className="bg-[#f7f5f4] py-[1em]">
         <div className="container">
-          <div className="footer-one__footer__wrapper">
-            <p>© Copyright 2021 Skinnovation, Inc.</p>
-            {/* TODO: footer <ul>
-              {footerLinks.creditLinks.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.to}>
-                    <a>{link.name}</a>
-                  </Link>
-                </li>
-              ))}
-            </ul> */}
+          <div className="flex justify-between flex-wrap">
+            <p className="text-[#888] text-[0.875em] leading-none font-normal">
+              © Copyright 2021 Skinnovation, Inc.
+            </p>
           </div>
         </div>
       </div>
