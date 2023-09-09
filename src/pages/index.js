@@ -15,9 +15,11 @@ import sliderOne from "../content/slider-one.json";
 import introductionOne from "../content/introduction-one.json";
 import introductionTwo from "../content/introduction-two.json";
 import dataSkinconcern from "../data/treatment-menu/skinconcern.json";
+import dataTreatment from "../data/treatment-menu/treatmentType.json";
 import TreatmentSlider from "../components/Sections/Slider/TreatmentSlider";
 import SkinConcernOne from "../components/Sections/SkinConcerns/SkinConcernOne";
 import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
+import TreatmentTypeTwo from "../components/Sections/SkinConcerns/TreatmentTypeTwo";
 
 const Home = ({
   gadgets,
@@ -54,6 +56,9 @@ const Home = ({
           title="Treatment type"
           data={dataSkinconcern}
         />
+      </div>
+      <div className="mt-[80px] max-md:mt-[48px] max-w-[752px] mx-auto">
+        <TreatmentTypeTwo data={dataTreatment} className="mt-[32px]" />
       </div>
     </LayoutOne>
   );
