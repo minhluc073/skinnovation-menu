@@ -24,16 +24,29 @@ export default function AccordionTreatment({ data, className }) {
     <div className={className}>
       {data?.map((faq) => (
         <div
-          className={`${isActive.key === faq?.key} accordion-item`}
+          className={`${
+            isActive.key === faq?.key
+          } py-[24px] px-[32px] border-2 border-solid border-light mb-[16px] last:mb-0 rounded-[32px]`}
           key={faq?.key}
         >
-          <div className="accordion-header">
-            {faq?.title}
-
-            <span
-              className={isActive.key === faq?.key ? "icon-up" : "icon-down"}
-              onClick={() => handleToggle(faq?.key)}
-            ></span>
+          <div className="flex items-center justify-between">
+            <div>
+              <p>{faq?.title}</p>
+            </div>
+            <div className="flex gap-[8px] items-center">
+              <a
+                href="#"
+                className="text-primary rounded-[24px] py-[8px] px-[16px] bg-light"
+              >
+                {faq?.tag}
+              </a>
+              <span
+                className={`${
+                  isActive.key === faq?.key ? "icon-up" : "icon-down"
+                } cursor-pointer flex items-center justify-center text-[18px] w-[40px] h-[40px] bg-primary rounded-[100px] text-white`}
+                onClick={() => handleToggle(faq?.key)}
+              ></span>
+            </div>
           </div>
           <Collapse isOpened={isActive.key === faq?.key}>
             <div className={`${isActive.key === faq?.key} accordion-collapse`}>
