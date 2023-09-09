@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "title": "Pigmentation",
+        "icon": "icon-icon1"
+    },
+    {
+        "id": 2,
+        "title": "Acne & Inflammation",
+        "icon": "icon-icon2"
+    },
+    {
+        "id": 3,
+        "title": "Redness & Sensitivity",
+        "icon": "icon-icon3"
+    },
+    {
+        "id": 4,
+        "title": "Age Management",
+        "icon": "icon-icon4"
+    },
+    {
+        "id": 5,
+        "title": "First timers",
+        "icon": "/assets/images/treatment/type1.png"
+    },
+    {
+        "id": 6,
+        "title": "For regulars",
+        "icon": "/assets/images/treatment/type2.png"
+    },
+    {
+        "id": 7,
+        "title": "Face",
+        "icon": "/assets/images/treatment/type3.png"
+    },
+    {
+        "id": 8,
+        "title": "Lashes",
+        "icon": "/assets/images/treatment/type4.png"
+    },
+    {
+        "id": 9,
+        "title": "Weddings & events",
+        "icon": "/assets/images/treatment/type5.png"
+    }
+
+]

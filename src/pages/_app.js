@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 import AppProvider from "@context/app-context";
-// import "../../public/assets/font-icomoon/font-iconmoon.css";
+import "../../public/assets/icomoon/iconmoon.css";
 import "@styles/styles.scss";
 import "@styles/tailwind.scss";
 

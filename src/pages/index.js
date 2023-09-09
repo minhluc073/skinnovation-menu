@@ -14,9 +14,10 @@ import OneRowProductSlider from "../components/Sections/ProductThumb/ProductSlid
 import sliderOne from "../content/slider-one.json";
 import introductionOne from "../content/introduction-one.json";
 import introductionTwo from "../content/introduction-two.json";
-// import dataSkinconcern from "../data/treatment-menu/skinconcerns.js";
+import dataSkinconcern from "../data/treatment-menu/skinconcern.json";
 import TreatmentSlider from "../components/Sections/Slider/TreatmentSlider";
 import SkinConcernOne from "../components/Sections/SkinConcerns/SkinConcernOne";
+import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
 
 const Home = ({
   gadgets,
@@ -33,29 +34,27 @@ const Home = ({
       {/* <HomeSlider data={slider} className="-style-1" showDots /> */}
       {/* <MainHero data={introductionOne} /> */}
       <TreatmentSlider />
-      <div className="mt-[16px] hidden max-mb:block">
+      <div className="mt-[16px] hidden max-md:block">
         <div className="container">
           <h2 className="text-center text-[24px] font-semibold leading-[24px]">
             Treatment menu
           </h2>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-[80px] max-[768]:mt-[32px]">
+      <div className="mt-[80px] max-md:mt-[32px] max-w-[752px] mx-auto">
         <SkinConcernOne
           center="text-center"
           title="Skin concerns"
-          // data={dataSkinconcern}
+          data={dataSkinconcern}
         />
       </div>
-      <h1>hhhhhhhhhhhhhhhhhh</h1>
-      <h1>hhhhhhhhhhhhhhhhhh</h1>
-
-      <h1>hhhhhhhhhhhhhhhhhh</h1>
-
-      <h1>hhhhhhhhhhhhhhhhhh</h1>
-      <h1>hhhhhhhhhhhhhhhhhh</h1>
-
-      <h1 className="pt-[100px]">hhhhhhhhhhhhhhhhhh</h1>
+      <div className="mt-[80px] max-md:mt-[48px] max-w-[944px] mx-auto">
+        <TreatmentType
+          center="text-center"
+          title="Treatment type"
+          data={dataSkinconcern}
+        />
+      </div>
     </LayoutOne>
   );
 };

@@ -10,13 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      spacing: {
-        112: "28rem",
-        128: "32rem",
-      },
       colors: {
         black: "#111",
         white: "#fff",
+        primary: "#714E57",
+        light: "#F8E2DF",
       },
     },
     // container: {
