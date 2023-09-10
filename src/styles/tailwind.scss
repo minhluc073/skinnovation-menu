@@ -18,6 +18,46 @@
         @apply opacity-100;
     }
 }
+.btn-treatment {
+    background: linear-gradient(270deg, rgba(248, 226, 223, 0.24) -9.94%, rgba(248, 226, 223, 0) 100%), #6f4c55;
+}
 .ReactCollapse--collapse {
-    transition: height 500ms;
+    transition: height 0.5s ease-in-out;
+}
+@media screen and (max-width: 640px) {
+    .res-unset {
+        align-items: unset;
+    }
+}
+.hhh {
+    animation: rotateX 800ms ease-in-out forwards;
+}
+.vvv {
+    animation: rotateY 800ms ease-in-out forwards;
+}
+@keyframes rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+@keyframes rotateY {
+    100% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    50% {
+        transform: rotateX(-20deg);
+    }
+    0% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
 }
