@@ -22,7 +22,7 @@
     background: linear-gradient(270deg, rgba(248, 226, 223, 0.24) -9.94%, rgba(248, 226, 223, 0) 100%), #6f4c55;
 }
 .ReactCollapse--collapse {
-    transition: height 0.5s ease-in-out;
+    transition: height 0.3s ease-in-out;
 }
 @media screen and (max-width: 640px) {
     .res-unset {
@@ -30,7 +30,22 @@
     }
 }
 .hhh {
-    animation: rotateX 800ms ease-in-out forwards;
+    // animation: rotateX 800ms ease-in-out forwards;max-height: 0;
+    transition: max-height 800ms;
+}
+.kk {
+    max-height: 0;
+    overflow: hidden;
+    // transition: max-height 0.5s ease-in-out;
+    // animation: rotateY 800ms ease-in-out forwards;
+}
+.hh {
+    max-height: 100vh;
+    overflow: hidden;
+    // transition: height 500ms;
+
+    // transition: max-height 0.5s ease-in-out;
+    // animation: rotateX 800ms ease-in-out forwards;
 }
 .vvv {
     animation: rotateY 800ms ease-in-out forwards;
