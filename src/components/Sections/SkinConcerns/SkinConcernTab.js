@@ -36,10 +36,6 @@ const data = [
 export default function SkinConcernTab({ title }) {
   const [tabIndex, setTabIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  const handleClick = (event) => {
-    // 👇️ toggle isActive state on click
-    setIsActive((current) => !current);
-  };
 
   const settings = {
     customPaging: function (i) {
@@ -97,7 +93,7 @@ export default function SkinConcernTab({ title }) {
             <Slider {...settings}>
               <CustomTab
                 onClick={() => setTabIndex(0)}
-                className={isActive ? "bg-salmon" : ""}
+                className={tabIndex === 0 ? "activeTab" : ""}
               >
                 <div className="w-auto slick-concern cursor-pointer">
                   <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
@@ -108,7 +104,10 @@ export default function SkinConcernTab({ title }) {
                   </div>
                 </div>
               </CustomTab>
-              <CustomTab onClick={() => setTabIndex(1)}>
+              <CustomTab
+                onClick={() => setTabIndex(1)}
+                className={tabIndex === 1 ? "activeTab" : ""}
+              >
                 <div className="w-auto slick-concern cursor-pointer">
                   <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
                     <span className="text-[16px] leading-[24px]">
@@ -118,7 +117,10 @@ export default function SkinConcernTab({ title }) {
                   </div>
                 </div>
               </CustomTab>
-              <CustomTab onClick={() => setTabIndex(2)}>
+              <CustomTab
+                onClick={() => setTabIndex(2)}
+                className={tabIndex === 2 ? "activeTab" : ""}
+              >
                 <div className="w-auto slick-concern cursor-pointer">
                   <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
                     <span className="text-[16px] leading-[24px]">
@@ -128,7 +130,10 @@ export default function SkinConcernTab({ title }) {
                   </div>
                 </div>
               </CustomTab>
-              <CustomTab onClick={() => setTabIndex(3)}>
+              <CustomTab
+                onClick={() => setTabIndex(3)}
+                className={tabIndex === 3 ? "activeTab" : ""}
+              >
                 <div className="w-auto slick-concern cursor-pointer">
                   <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
                     <span className="text-[16px] leading-[24px]">
@@ -138,9 +143,12 @@ export default function SkinConcernTab({ title }) {
                   </div>
                 </div>
               </CustomTab>
-              <CustomTab onClick={() => setTabIndex(4)}>
+              <CustomTab
+                onClick={() => setTabIndex(4)}
+                className={tabIndex === 4 ? "activeTab" : ""}
+              >
                 <div className="w-auto slick-concern cursor-pointer">
-                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px]">
+                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
                     <span className="text-[16px] leading-[24px]">
                       Age Management
                     </span>

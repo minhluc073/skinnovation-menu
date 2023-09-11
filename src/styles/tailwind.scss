@@ -115,11 +115,13 @@ html {
         // width: auto !important;
     }
     .slick-current {
-        .menu-tab {
-            @apply bg-primary text-white;
-        }
     }
 }
 .react-tabs__tab-list {
     @apply border-0 mb-0;
+    .activeTab {
+        .menu-tab {
+            @apply bg-primary text-white;
+        }
+    }
 }

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 
 import AppProvider from "@context/app-context";
 import "../../public/assets/icomoon/iconmoon.css";
+import "react-dropdown/style.css";
 import "@styles/styles.scss";
 import "@styles/tailwind.scss";
 

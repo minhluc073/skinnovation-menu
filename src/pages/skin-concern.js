@@ -20,6 +20,7 @@ import TreatmentSlider from "../components/Sections/Slider/TreatmentSlider";
 import SkinConcernTab from "../components/Sections/SkinConcerns/SkinConcernTab";
 import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
 import TreatmentTypeTwo from "../components/Sections/SkinConcerns/TreatmentTypeTwo";
+import AccordionTreatment from "../components/Sections/SkinConcerns/AccordionTreatment";
 
 const SkinConcern = ({
   gadgets,
@@ -46,7 +47,11 @@ const SkinConcern = ({
         <SkinConcernTab title="Skin concerns" />
       </div>
       <div className="mt-[80px] max-md:mt-[48px] max-w-[752px] mx-auto">
-        <TreatmentTypeTwo data={dataTreatment} className="mt-[32px]" />
+        <AccordionTreatment
+          data={dataTreatment}
+          filter={"Popular"}
+          className="mt-[32px]"
+        />
       </div>
     </LayoutOne>
   );
