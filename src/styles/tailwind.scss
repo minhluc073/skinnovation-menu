@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    font-family: "Graphik LC", sans-serif;
+}
 .container {
     @apply max-w-[1156px] px-[8px] mx-auto max-mb:px-[24px];
 }
@@ -31,7 +34,7 @@
 }
 .hhh {
     // animation: rotateX 800ms ease-in-out forwards;max-height: 0;
-    transition: max-height 800ms;
+    transition: max-height 1000ms ease-in-out;
 }
 .kk {
     max-height: 0;
@@ -75,4 +78,48 @@
         opacity: 1;
         transform: rotateX(0deg);
     }
+}
+
+.slick-next {
+    @apply hidden;
+}
+.wrap-slick-concern {
+    .slick-prev {
+        font-size: 18px !important;
+        left: 0 !important;
+        width: 40px;
+        height: 40px;
+        // top: 24%;
+        &::before {
+            color: #fff;
+            content: "\e901";
+            font-family: "icomoon";
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6f4c55;
+            border-radius: 50%;
+        }
+        @apply z-[5] text-primary;
+    }
+    .slick-slider {
+        @apply pl-[44px];
+        .slick-concern {
+            width: auto !important;
+            @apply mr-[8px];
+        }
+    }
+    .slick-slide {
+        // width: auto !important;
+    }
+    .slick-current {
+        .menu-tab {
+            @apply bg-primary text-white;
+        }
+    }
+}
+.react-tabs__tab-list {
+    @apply border-0 mb-0;
 }

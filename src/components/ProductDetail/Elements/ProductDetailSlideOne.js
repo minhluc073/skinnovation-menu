@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
+
 import { PrevArrow, NextArrow } from "../../Other/SliderArrow";
 
 export default function ProductDetailSlideOne({ images }) {
