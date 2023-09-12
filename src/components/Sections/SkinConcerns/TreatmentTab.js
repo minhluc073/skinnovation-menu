@@ -73,7 +73,7 @@ export default function TreatmentTab({ title }) {
             <Tab>
               <a
                 href="/"
-                className="btn-treatment py-[8px] px-[17px] inline-flex items-center gap-[4px] max-sm:block rounded-[24px]"
+                className="btn-treatment py-[8px] px-[17px] inline-flex items-center gap-[4px]  rounded-[24px] max-sm:w-[40px] max-sm:h-[40px] max-sm:p-0 max-sm:justify-center max-sm:rounded-[50%]"
               >
                 <i className="icon-left text-white text-[18px]"></i>
                 <span className="text-[16px] text-white leading-[24px] max-sm:text-[0px]">
