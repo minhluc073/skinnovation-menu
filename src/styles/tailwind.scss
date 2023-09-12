@@ -186,3 +186,16 @@ html {
     color: #ffffff;
     font-weight: 600;
 }
+
+.react-tabs__tab-panel--selected {
+    animation: fadeInFaq 0.5s;
+}
+@keyframes fadeInFaq {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

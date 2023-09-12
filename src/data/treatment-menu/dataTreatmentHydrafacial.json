@@ -1,0 +1,68 @@
+[
+    {
+        "key": 1,
+        "title": "expand to learn more",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content": "Known for delivering immediate results for a variety of skin conditions - the LED HydraFacial is a must-try for people who are looking to achieve the best skin of their life! Perfect before an event or special occasion. Hydrafacial is safe for everyone to use, it’s non-irritating, non-invasive and there is no downtime! Get your glow on!"
+    },
+    {
+        "key": 2,
+        "title": "GloGetter Level 1 HydraFacial treatment",
+        "price":"$ 235",
+        "time": "60 min",
+        "tag":"popular",
+        "content": "This is our Level 1 signature HydraFacial treatment that includes a deep cleanse and exfoliation."
+
+    },
+    {
+        "key": 3,
+        "title": "GloMaster Level 2 HydraFacial treatment",
+        "price":"$ 280",
+        "time": "65 min",
+        "tag":"popular",
+        "content": "This is our level 2 Hydrafacial treatment enhanced with a personalized booster to address your specific skin concerns, LED red light therapy, and our signature gel mask."
+
+    },
+    {
+        "key": 4,
+        "title": "GloPro Level 3 HydraFacial treatment",
+        "price":"$ 325",
+        "time": "75 min",
+        "tag":"popular",
+        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
+
+    },
+    {
+        "key": 5,
+        "title": "Hydrafacial Lift (includes Microcurrent)",
+        "price":"$ 325",
+        "time": "100 min",
+        "tag":"popular",
+        "content": "Combining two great modalities Hydrafacial GloMaster + Microcurrent technology helps to exfoliate, boost hydration and stimulate facial muscles to achieve a non-invasive facelift."
+
+    },
+    {
+        "key": 6,
+        "title": "Hydrafacial + DMK combo",
+        "price":"$ 375",
+        "time": "100 min",
+        "tag":"popular",
+        "content": "The perfect combo for clients wanting a complete deep pore cleanse upgraded with deep internal skin nourishment with our innovative enzyme mask for true circulation and lymphatic drainage. This treatment is great for someone who is trying to get immediate results with little to no downtime."
+
+    },
+    {
+        "key": 7,
+        "title": "Hydrafacial + Endosphères combo (new!)",
+        "price":"$ 325",
+        "time": "80 min",
+        "tag":"popular",
+        "content": "This combo works beautifully together to combat aging, sagging, dull skin. Starting with our endospheres facial device, we will focus on massaging the muscles and targeting sagging areas while Hydrafacial will focus more on the surface layer of the skin (decongesting & serum infusion) This treatment also includes our LED therapy while you mask"
+
+    }
+
+]
+
+
+

@@ -115,7 +115,22 @@ export default function SkinConcernTab({ title }) {
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList>
             <Slider {...settings}>
-              <CustomTab
+              {data.map((item, idx) => (
+                <CustomTab
+                  onClick={() => setTabIndex(idx)}
+                  className={tabIndex === idx ? "activeTab" : ""}
+                >
+                  <div className="w-auto slick-concern cursor-pointer">
+                    <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
+                      <span className="text-[16px] leading-[24px]">
+                        {item.title}
+                      </span>
+                      <span className={`${item.icon} text-[24px]`}></span>
+                    </div>
+                  </div>
+                </CustomTab>
+              ))}
+              {/* <CustomTab
                 onClick={() => setTabIndex(0)}
                 className={tabIndex === 0 ? "activeTab" : ""}
               >
@@ -179,7 +194,7 @@ export default function SkinConcernTab({ title }) {
                     <span className={`icon-icon2 text-[24px]`}></span>
                   </div>
                 </div>
-              </CustomTab>
+              </CustomTab> */}
             </Slider>
           </TabList>
           <TabPanel>

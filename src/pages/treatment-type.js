@@ -46,11 +46,11 @@ const TreatmentMenu = ({
       <div className="mt-[40px] max-md:mt-[32px]  max-w-[752px] mx-auto">
         <TreatmentTab title="Treatment type" />
       </div>
-      <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
+      {/* <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
         <div className="container">
           <AccordionTreatment data={dataTreatment} filter={"Popular"} />
         </div>
-      </div>
+      </div> */}
     </LayoutOne>
   );
 };

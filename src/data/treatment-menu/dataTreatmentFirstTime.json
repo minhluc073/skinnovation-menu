@@ -1,0 +1,22 @@
+[
+    {
+        "key": 1,
+        "title": "First-time customer Skinnovation special facial",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content": "Start with a detailed skin analysis report leveraging a state-of-the-art machine, go through product recommendations and get a recommended skincare routine and a data-driven treatment plan and finish off with a cleansing exfoliation mask."
+    },
+    {
+        "key": 2,
+        "title": "First-time DMK client facial (signature enzyme therapy)",
+        "price":"$ 245",
+        "time": "90 min",
+        "tag":"popular",
+        "content": "Experience the magic of the DMK enzyme mask including a pre-treatment and 30 days’ worth of products. DMK enzyme mask was created to mimic your natural skin enzyme activity to bring your skin to a state of balance and boost the physiological function of your skin."
+
+    }
+]
+
+
+

@@ -1,0 +1,49 @@
+[
+    {
+        "key": 1,
+        "title": "expand to learn more",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content":"DMK’s revolutionary concept of Remove, Rebuild, Protect, Maintain aims to match an individual’s biochemistry with the appropriate skin therapy. Botanical-based paramedical products make up the DMK skin care program."
+    },
+    {
+        "key": 2,
+        "title": "Level 1 DMK Facial Treatment",
+        "price":"$ 215",
+        "time": "90 min",
+        "tag":"popular",
+        "content": "Restores skin to its peak condition. This signature DMK enzyme treatment works within the skin. The enzymes aim to strengthen the structural integrity of the skin to create a healthy environment for cells to live and thrive in. Designed to address various skin concerns such as congestion, acne, hyperpigmentation, lines and wrinkles, dryness. Includes exfoliant, pretreatment, enzyme mask, post-treatment, and Red LED light therapy."
+
+    },
+    {
+        "key": 3,
+        "title": "Level 2 DMK Facial Treatment",
+        "price":"$ 255",
+        "time": "100 -120 min",
+        "tag":"popular",
+        "content": "Signature DMK enzyme treatment with extraction + advanced method of exfoliation like microdermabrasion, chemical peel chosen towards your skin concern in combination with Red LED treatment shows excellent results for congestion, acne, deep-rooted hyperpigmentation."
+
+    },
+    {
+        "key": 4,
+        "title": "Level 3 DMK Facial Treatment",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content": "Next level treatment, such as Alkaline wash as a chemical peel, spot treatment for RP, liquid laser, Follicuzyme®, evacuderm."
+
+    },
+    {
+        "key": 5,
+        "title": "Level 4 DMK Facial Treatment",
+        "price":"$ 325",
+        "time": "120 min",
+        "tag":"popular",
+        "content": "Superior level of the treatment which helps to get you red carpet ready. Firm up, tighten, and brighten your skin instantly with the DMK special occasion treatment."
+
+    }
+]
+
+
+

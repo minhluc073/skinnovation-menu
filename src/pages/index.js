@@ -20,6 +20,9 @@ import TreatmentSlider from "../components/Sections/Slider/TreatmentSlider";
 import SkinConcernOne from "../components/Sections/SkinConcerns/SkinConcernOne";
 import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
 import TreatmentTypeTwo from "../components/Sections/SkinConcerns/TreatmentTypeTwo";
+import AccordionTreatment from "../components/Sections/SkinConcerns/AccordionTreatment";
+
+
 
 const Home = ({
   gadgets,

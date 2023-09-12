@@ -1,0 +1,32 @@
+[
+    {
+        "key": 1,
+        "title": "Keratin Lash Lift Treatment",
+        "price":"$ 170",
+        "time": "60 min",
+        "tag":"popular",
+        "content": "This treatment is fundamentally different from all previously known procedures for eyelashes, such as eyelash extensions or eyelash perms. It is a unique, keratin-based lash-enhancement technology that boosts and lifts the natural eyelash without the need for fake eyelashes. It was created as a luxurious alternative to eyelash extensions, fake eyelashes, false lashes, and growth serums. This advanced technique and treatment can provide a beautiful result."
+    },
+    {
+        "key": 2,
+        "title": "Brow Lamination (Lift)",
+        "price":"$ 100",
+        "time": "45 min",
+        "tag":"popular",
+        "content": "This new trending treatment is recommended for people trying to achieve fuller and thicker “feathered” brows. The hairs are placed up and out while also relaxing them to lay flat on the skin. This treatment alone takes 45 mins. When you add it on to your lash lift treatment the total time is 1 hr and 30 mins for both services. The brow lift effect lasts for up to 6 weeks. Please check out some before and afters to see if this treatment is right for you!"
+
+    },
+    {
+        "key": 3,
+        "title": "Keratin Lash Lift treatment + Brow Lamination Combo",
+        "price":"$ 325",
+        "time": "75 min",
+        "tag":"popular",
+        "content": "Save $10 when you book this combo of lashes and brows! Combine your Yumi Keratin Eyelash lift and Yumi Brow Lift (lamination)."  
+    }
+ 
+  
+]
+
+
+
