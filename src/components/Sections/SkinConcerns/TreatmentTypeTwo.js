@@ -5,7 +5,7 @@ import dataTreatmentAll from "../../../data/treatment-menu/treatmentTypeAll.json
 import { useState } from "react";
 import Dropdown from "react-dropdown";
 
-export default function TreatmentTypeTwo() {
+export default function TreatmentTypeTwo({ className }) {
   const [data, setData] = useState(dataTreatment);
   const [filter, setFilter] = useState("Popular");
 
@@ -33,21 +33,24 @@ export default function TreatmentTypeTwo() {
           className="text-center text-[#000] text-[32px] font-semibold leading-[40px] max-md:text-[18px] max-md:leading-[24px] inline-flex items-center justify-center gap-[10px] cursor-pointer"
           onClick={() => setShow(!isShow)}
         >
-          {filter} <i className="icon-down"></i>
+          {filter} <i className="icon-down text-[#000]"></i>
         </h3>
         {isShow && (
           <>
             <ul className="absolute inset max-sm:hidden left-[50%] translate-x-[-50%] w-[368px] h-[200px] py-[40px] rounded-[40px] bg-white border-[1px] border-primary flex flex-col justify-between">
               <li
                 onClick={() => _onSelect("Popular")}
-                className="cursor-pointer"
+                className="cursor-pointer text-[#D9D9D9] text-[24px] leading-[24px] font-semibold"
               >
                 Popular
               </li>
               <li className="mt-[-10px] text-[#D9D9D9] cursor-pointer">
                 . . . . . . . . .
               </li>
-              <li onClick={() => _onSelect("All")} className="cursor-pointer">
+              <li
+                onClick={() => _onSelect("All")}
+                className="cursor-pointer text-primary text-[24px] leading-[24px] font-semibold"
+              >
                 All
               </li>
             </ul>
@@ -81,9 +84,12 @@ export default function TreatmentTypeTwo() {
         )}
       </div>
 
-      <div className="mt-[32px]">
-        <AccordionTreatment data={data} filter={filter} />
-      </div>
+      <AccordionTreatment
+        data={data}
+        filter={filter}
+        className={className}
+        mt="32px"
+      />
     </div>
   );
 }

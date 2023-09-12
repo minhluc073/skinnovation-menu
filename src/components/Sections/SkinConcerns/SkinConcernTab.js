@@ -67,6 +67,30 @@ export default function SkinConcernTab({ title }) {
         {/* kkk */}
       </a>
     ),
+    // responsive: [
+    //   {
+    //     breakpoint: 1200,
+    //     settings: {},
+    //   },
+    //   {
+    //     breakpoint: 992,
+    //     settings: {
+    //       slidesToShow: 2,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //     },
+    //   },
+    // ],
   };
 
   const CustomTab = ({ onClick, children, className }) => {
@@ -82,12 +106,12 @@ export default function SkinConcernTab({ title }) {
     <>
       <div className="container">
         <h3
-          className={`text-[#000] text-[32px] font-semibold leading-[40px] max-md:text-[18px] max-md:leading-[24px] max-w-[752px] mx-auto`}
+          className={`text-[#000] text-[32px] font-semibold leading-[40px] max-md:text-[18px] max-md:leading-[24px] max-w-[752px] mx-auto px-[8px] max-mb:px-[24px] max-md:px-0`}
         >
           {title}
         </h3>
       </div>
-      <div className="max-w-[950px] mx-auto pl-[6rem] wrap-slick-concern mt-[24px]">
+      <div className="max-w-[950px] mx-auto pl-[6rem] wrap-slick-concern mt-[24px] max-lg:max-w-[752px] max-lg:pl-[24px] max-xs:mt-[16px]">
         <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
           <TabList>
             <Slider {...settings}>
@@ -159,55 +183,55 @@ export default function SkinConcernTab({ title }) {
             </Slider>
           </TabList>
           <TabPanel>
-            <div className="mt-[48px]">
+            <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Acne & Inflammation
               </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000]">
+              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
                 Known for delivering immediate results for a variety of skin
                 conditions — the LED HydraFacial is a must-try for
               </p>
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="mt-[48px]">
+            <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Pigmentation
               </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000]">
+              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
                 Known for delivering immediate results for a variety of skin
                 conditions — the LED HydraFacial is a must-try for
               </p>
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="mt-[48px]">
+            <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Redness & Sensitivity
               </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000]">
+              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
                 Known for delivering immediate results for a variety of skin
                 conditions — the LED HydraFacial is a must-try for
               </p>
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="mt-[48px]">
+            <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Age Management
               </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000]">
+              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
                 Known for delivering immediate results for a variety of skin
                 conditions — the LED HydraFacial is a must-try for
               </p>
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="mt-[48px]">
+            <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Age Management
               </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000]">
+              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
                 Known for delivering immediate results for a variety of skin
                 conditions — the LED HydraFacial is a must-try for
               </p>

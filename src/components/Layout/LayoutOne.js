@@ -4,6 +4,7 @@ import Head from "next/head";
 import FooterOne from "../Footer/FooterOne";
 import withScrollFixed from "../../common/withScrollFixed";
 import HeaderOne from "../Header/HeaderOne";
+import Gotop from "../gotop";
 
 const ScrollFixedHeader = withScrollFixed(HeaderOne);
 
@@ -16,6 +17,7 @@ const LayoutOne = (props) => {
       <ScrollFixedHeader {...props} />
       {props.children}
       <FooterOne />
+      <Gotop/>
     </>
   );
 };

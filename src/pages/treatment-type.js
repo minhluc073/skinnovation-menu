@@ -18,10 +18,11 @@ import dataSkinconcern from "../data/treatment-menu/skinconcern.json";
 import dataTreatment from "../data/treatment-menu/treatmentType.json";
 import TreatmentSlider from "../components/Sections/Slider/TreatmentSlider";
 import SkinConcernTab from "../components/Sections/SkinConcerns/SkinConcernTab";
+import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
 import AccordionTreatment from "../components/Sections/SkinConcerns/AccordionTreatment";
+import TreatmentTab from "../components/Sections/SkinConcerns/TreatmentTab";
 
-
-const SkinConcern = ({
+const TreatmentMenu = ({
   gadgets,
   products,
   slider,
@@ -32,7 +33,7 @@ const SkinConcern = ({
   specials,
 }) => {
   return (
-    <LayoutOne title="skin concern" className="-style-1">
+    <LayoutOne title="treatment type" className="-style-1">
       {/* <HomeSlider data={slider} className="-style-1" showDots /> */}
       {/* <MainHero data={introductionOne} /> */}
       <div className="max-w-[752px] mx-auto mt-[40px] max-sm:mt-[16px]">
@@ -42,8 +43,8 @@ const SkinConcern = ({
           </h2>
         </div>
       </div>
-      <div className="mt-[40px] max-md:mt-[32px]">
-        <SkinConcernTab title="Skin concerns" />
+      <div className="mt-[40px] max-md:mt-[32px]  max-w-[752px] mx-auto">
+        <TreatmentTab title="Treatment type" />
       </div>
       <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
         <div className="container">
@@ -64,4 +65,4 @@ export async function getStaticProps() {
   };
 }
 
-export default SkinConcern;
+export default TreatmentMenu;
