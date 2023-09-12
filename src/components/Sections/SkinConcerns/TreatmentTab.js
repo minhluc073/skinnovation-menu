@@ -35,24 +35,30 @@ const contentTab = [
   },
   {
     id: 2,
-    title: "First timers",
+    title: "Face",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
     id: 3,
-    title: "Lashes",
+    title: "First timers",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
     id: 4,
-    title: "For regulars",
+    title: "Lashes",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
     id: 5,
+    title: "For regulars",
+    content:
+      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+  },
+  {
+    id: 6,
     title: "Weddings & events",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
@@ -81,7 +87,15 @@ export default function TreatmentTab({ title }) {
                 </span>
               </a>
             </Tab>
-            <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
+            {menuTab?.map((item) => (
+              <Tab
+                key={item.id}
+                className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary"
+              >
+                {item.title}
+              </Tab>
+            ))}
+            {/* <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
               Face
             </Tab>
             <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
@@ -95,14 +109,14 @@ export default function TreatmentTab({ title }) {
             </Tab>
             <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
               Weddings & events
-            </Tab>
+            </Tab> */}
           </TabList>
-          <div className="mt-[48px] max-sm:mt-[32px]">
+          {/* <div className="mt-[48px] max-sm:mt-[32px]">
             <TabPanel>
               <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
                 Face
               </h5>
-              <p className="text-[16px] leading-[24px] text-[]">
+              <p className="text-[16px] leading-[24px] text-[#000]">
                 Known for delivering immediate results for a variety of skin
                 conditions — the LED HydraFacial is a must-try for
               </p>
@@ -152,6 +166,18 @@ export default function TreatmentTab({ title }) {
                 conditions — the LED HydraFacial is a must-try for
               </p>
             </TabPanel>
+          </div> */}
+          <div className="mt-[48px] max-sm:mt-[32px]">
+            {contentTab?.map((item) => (
+              <TabPanel>
+                <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
+                  {item.title}
+                </h5>
+                <p className="text-[16px] leading-[24px] text-[#000]">
+                  {item.content}
+                </p>
+              </TabPanel>
+            ))}
           </div>
         </Tabs>
       </div>
