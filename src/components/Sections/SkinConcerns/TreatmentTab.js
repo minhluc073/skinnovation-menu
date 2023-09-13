@@ -216,9 +216,7 @@ export default function TreatmentTab({ title }) {
                   {item.content}
                 </p>
                 <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
-                  <div className="container">
-                    <AccordionTreatment data={item?.data} filter={"Popular"} />
-                  </div>
+                  <AccordionTreatment data={item?.data} filter={"Popular"} />
                 </div>
               </TabPanel>
             ))}
