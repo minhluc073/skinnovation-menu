@@ -1,7 +1,7 @@
 [
   {
     "title": "Booking", 
-    "to": "/skin-concern"
+    "to": "/Booking"
   },
   { "title": "Shop", 
     "to": "/shop" 

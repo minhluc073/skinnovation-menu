@@ -1,0 +1,57 @@
+[
+    {
+        "key": 1,
+        "title": "expand to learn more",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content":"We are now offering multiple body treatments - Endosphères Therapy and LED Bed:"
+    },
+    {
+        "key": 2,
+        "title": "Baby Feet Treatment (new!)",
+        "price":"$ 65",
+        "time": "30 min",
+        "tag":"popular",
+        "content": "An advanced foot peel that takes less than 30 minutes! This amazing treatment will have your feet feeling baby soft. Rids calloused, cracked, dry feet. The peel is left on for 15 mins then removed with a relaxing hot towel. Heels and other rough calloused areas are then exfoliated revealing smooth beautiful skin! What makes this treatment unlike any other foot peel is there is zero downtime...a great stand alone or add on to any service!"
+
+    },
+    {
+        "key": 3,
+        "title": "Back Treatment (new!)",
+        "price":"$ 210",
+        "time": "60 min",
+        "tag":"popular",
+        "content": "This is an advanced skin revision for your back. Whether it's sun damage, bacne (back acne), or aging skin… let us treat you to one of our relaxing yet innovative back treatments. 1 hr treatment includes cleanse, exfoliation, extractions, enzyme mask therapy + LED, and finishing products."
+
+    },
+    {
+        "key": 4,
+        "title": "LED Bed Treatment",
+        "price":"$ 345",
+        "time": "90 min",
+        "tag":"popular",
+        "content": "The First LED Bed to gain over-the-counter FDA Clearance. FDA Cleared to temporarily relieve muscle, joint, and arthritic pain and increase local blood circulation. 18,240 LEDs designed to rejuvenate, repair and energize every cell in the body. Natural and non-invasive treatment. LightStim MultiWave® Patented Technology."
+
+    },
+    {
+        "key": 5,
+        "title": "Special Pricing (single session)",
+        "price":"$ 100",
+        "time": "45 min",
+        "tag":"popular"
+
+    },
+    {
+        "key": 6,
+        "title": "10 Session bundle",
+        "price":"$ 800",
+        "time": "55 min",
+        "tag":"popular"
+
+    }
+
+]
+
+
+

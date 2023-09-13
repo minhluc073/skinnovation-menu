@@ -1,0 +1,24 @@
+[
+    {
+        "key": 1,
+        "title": "Deep-Pore Cleanse Treatment",
+        "price":"$ 195",
+        "time": "60 min",
+        "tag":"popular",
+        "content":"Our Deep Pore Cleanse Treatment is designed to provide a nourishing experience for your skin.  Using specialized techniques and high-quality products, this treatment effectively targets and cleanses deep-seated impurities from your pores.  As a result, your skin will feel refreshed and hydrated, with a noticeably improvement in texture and appearance."
+    },
+    {
+        "key": 2,
+        "title": "Endosphères facial treatment",
+        "price":"$ 190",
+        "time": "60 min",
+        "tag":"popular",
+        "content": "Our incredible endospheres machine works for the face too. The smaller handheld device delivers lymphatic drainage while massaging the muscles and stimulating collagen production. This facial service is great for reducing puffiness and lifting/contouring facial tissue. This treatment also includes a hydrating jelly mask paired with our professional-grade LED light. Experience this rejuvenating facial service with any of our trained estheticians."
+
+    }
+
+
+]
+
+
+

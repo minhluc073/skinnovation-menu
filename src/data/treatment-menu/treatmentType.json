@@ -1,54 +1,92 @@
 [
     {
         "key": 1,
-        "title": "GloGetter Level 3 HydraFacial treatment",
-        "price":"$ 325",
-        "time": "75 min",
+        "title": "Keratin Lash Lift Treatment",
+        "price":"$ 170",
+        "time": "60 min",
         "tag":"popular",
-        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
+        "content": "This treatment is fundamentally different from all previously known procedures for eyelashes, such as eyelash extensions or eyelash perms. It is a unique, keratin-based lash-enhancement technology that boosts and lifts the natural eyelash without the need for fake eyelashes. It was created as a luxurious alternative to eyelash extensions, fake eyelashes, false lashes, and growth serums. This advanced technique and treatment can provide a beautiful result."
     },
     {
         "key": 2,
-        "title": "Hydrafacial Lift (includes Microcurrent)",
-        "price":"$ 300",
-        "time": "60 min",
+        "title": "Brow Lamination (Lift)",
+        "price":"$ 100",
+        "time": "45 min",
         "tag":"popular",
-        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
+        "content": "This new trending treatment is recommended for people trying to achieve fuller and thicker “feathered” brows. The hairs are placed up and out while also relaxing them to lay flat on the skin. This treatment alone takes 45 mins. When you add it on to your lash lift treatment the total time is 1 hr and 30 mins for both services. The brow lift effect lasts for up to 6 weeks. Please check out some before and afters to see if this treatment is right for you!"
 
     },
     {
         "key": 3,
-        "title": "Hydrafacial + DMK combo",
+        "title": "Keratin Lash Lift treatment + Brow Lamination Combo",
         "price":"$ 325",
         "time": "75 min",
         "tag":"popular",
-        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."  
+        "content": "Save $10 when you book this combo of lashes and brows! Combine your Yumi Keratin Eyelash lift and Yumi Brow Lift (lamination)."  
     },
     {
         "key": 4,
-        "title": "GloGetter Level 3 HydraFacial treatment",
-        "price":"$ 325",
-        "time": "75 min",
+        "title": "First-time customer Skinnovation special facial",
+        "price":"$ 275",
+        "time": "120 min",
         "tag":"popular",
-        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."   
+        "content": "Start with a detailed skin analysis report leveraging a state-of-the-art machine, go through product recommendations and get a recommended skincare routine and a data-driven treatment plan and finish off with a cleansing exfoliation mask."
     },
     {
         "key": 5,
-        "title": "Hydrafacial Lift (includes Microcurrent)",
-        "price":"$ 300",
-        "time": "60 min",
+        "title": "First-time DMK client facial (signature enzyme therapy)",
+        "price":"$ 245",
+        "time": "90 min",
         "tag":"popular",
-        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health." 
+        "content": "Experience the magic of the DMK enzyme mask including a pre-treatment and 30 days’ worth of products. DMK enzyme mask was created to mimic your natural skin enzyme activity to bring your skin to a state of balance and boost the physiological function of your skin."
+
     },
     {
         "key": 6,
-        "title": "Hydrafacial + DMK combo",
-        "price":"$ 325",
-        "time": "75 min",
+        "title": "GloGetter Level 1 HydraFacial treatment",
+        "price":"$ 235",
+        "time": "60 min",
         "tag":"popular",
-        "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
+        "content": "This is our Level 1 signature HydraFacial treatment that includes a deep cleanse and exfoliation."
+
+    },
+    {
+        "key": 7,
+        "title": "GloMaster Level 2 HydraFacial treatment",
+        "price":"$ 280",
+        "time": "65 min",
+        "tag":"popular",
+        "content": "This is our level 2 Hydrafacial treatment enhanced with a personalized booster to address your specific skin concerns, LED red light therapy, and our signature gel mask."
+
+    },
+    {
+        "key": 8,
+        "title": "Level 1 DMK Facial Treatment",
+        "price":"$ 215",
+        "time": "90 min",
+        "tag":"popular",
+        "content": "Restores skin to its peak condition. This signature DMK enzyme treatment works within the skin. The enzymes aim to strengthen the structural integrity of the skin to create a healthy environment for cells to live and thrive in. Designed to address various skin concerns such as congestion, acne, hyperpigmentation, lines and wrinkles, dryness. Includes exfoliant, pretreatment, enzyme mask, post-treatment, and Red LED light therapy."
+
+    },
+    {
+        "key": 9,
+        "title": "Level 2 DMK Facial Treatment",
+        "price":"$ 255",
+        "time": "100 -120 min",
+        "tag":"popular",
+        "content": "Signature DMK enzyme treatment with extraction + advanced method of exfoliation like microdermabrasion, chemical peel chosen towards your skin concern in combination with Red LED treatment shows excellent results for congestion, acne, deep-rooted hyperpigmentation."
+
+    },
+    {
+        "key": 10,
+        "title": "Level 3 DMK Facial Treatment",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content": "Next level treatment, such as Alkaline wash as a chemical peel, spot treatment for RP, liquid laser, Follicuzyme®, evacuderm."
 
     }
+
   
 ]
 

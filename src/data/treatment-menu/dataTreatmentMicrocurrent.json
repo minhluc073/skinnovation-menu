@@ -1,0 +1,50 @@
+[
+    {
+        "key": 1,
+        "title": "expand to learn more",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content":"Featuring our top-of-the-line microcurrent CACI machine. Microcurrent in aesthetics is commonly described as facial toning or non-surgical face lifting” due to the dramatic lifting effect that microcurrent has on facial muscles and contours."
+    },
+    {
+        "key": 2,
+        "title": "Full microcurrent facial",
+        "price":"$ 245",
+        "time": "80 min",
+        "tag":"popular",
+        "content": "This treatment includes cleansing, exfoliation, extractions along with the microcurrent machine to lift and tone the facial muscles and tissue followed by a hydrating mask and led therapy."
+
+    },
+    {
+        "key": 3,
+        "title": "Maintenance microcurrent treatment",
+        "price":"$ 195",
+        "time": "75 min",
+        "tag":"popular",
+        "content": "This treatment only includes cleanse, microcurrent treatment mask, and LED."
+
+    },
+    {
+        "key": 4,
+        "title": "Microcurrent + DMK",
+        "price":"$ 350",
+        "time": "155 min",
+        "tag":"popular",
+        "content": "This is a customized treatment using microcurrent and DMK enzyme for the ultimate lift. Recommended for severely sagging skin or prematurely-aging skin."
+
+    },
+    {
+        "key": 5,
+        "title": "Microcurrent Packages (set of 10 sessions)",
+        "price":"1750 for the set of 10 sessions",
+        "time": "75 min",
+        "tag":"popular",
+        "content": "Microcurrent stimulation delivers tiny electrical impulses that mirror the body’s natural bioelectrical field. The benefits are re-education of the muscles - tighter, stronger facial muscles, increased blood and lymph circulation, enhanced penetration of active ingredients, increased production of collagen and elastin, and increased mitochondrial activity. To achieve the best results series of treatments are recommended."
+
+    }
+
+]
+
+
+

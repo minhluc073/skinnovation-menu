@@ -1,0 +1,41 @@
+[
+    {
+        "key": 1,
+        "title": "expand to learn more",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content":"Dermaplaning is a skin treatment that uses an exfoliating blade to skim dead skin cells and hair from your face. It’s also called microplaning or blading."
+    },
+    {
+        "key": 2,
+        "title": "Dermaplaning Classic Facial",
+        "price":"$ 195",
+        "time": "45 min",
+        "tag":"popular",
+        "content": "cleansing, dermaplane, LED light treatment, hydrating/soothing mask and finishes with serums/sunscreen"
+
+    },
+    {
+        "key": 3,
+        "title": "Dermaplaning GloGetter",
+        "price":"$ 255",
+        "time": "75 min",
+        "tag":"popular",
+        "content": "all the benefits of Hydrafacial level 1 along with dermaplane."
+
+    },
+    {
+        "key": 4,
+        "title": "Dermaplaning GloPro",
+        "price":"$ 345",
+        "time": "90 min",
+        "tag":"popular",
+        "content": "all the benefits of Hydrafacial level 3 along with dermaplane."
+
+    }
+
+]
+
+
+

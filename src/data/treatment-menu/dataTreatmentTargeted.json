@@ -1,0 +1,58 @@
+[
+    {
+        "key": 1,
+        "title": "expand to learn more",
+        "price":"$ 275",
+        "time": "120 min",
+        "tag":"popular",
+        "content":"Skinnovation believes in effective, non-invasive treatments and products. We offer Meder Beauty products, created by dermatologist Dr. Tiina Meder in a Swiss laboratory and backed by scientific research. They're safe for all skin types and stages of life, including pregnancy, breastfeeding, and menopause. "
+    },
+    {
+        "key": 2,
+        "title": "Lift and Glow Treatment",
+        "price":"$ 215",
+        "time": "45-60 min",
+        "tag":"popular",
+        "content": "This wrinkle-corrective treatment is perfect for those with fine lines, wrinkles, or loss of skin elasticity. By using active ingredients, it increases the synthesis of structural proteins in the skin, restoring elasticity and reducing the appearance of wrinkles and lines. The results are firmer, more resilient, brighter, smoother, and more even-toned skin. This treatment is a great option for those with sagging skin, loss of elasticity, fine lines, and wrinkles."
+
+    },
+    {
+        "key": 3,
+        "title": "HydraMatrix treatment",
+        "price":"$ 215",
+        "time": "45-60 min",
+        "tag":"popular",
+        "content": "Indulge in the HydraMatrix treatment if you have dry, dehydrated, tired-looking, flaky, or sensitized skin. This treatment deeply hydrates by restoring water in multiple layers of the skin. It uses high and low molecular forms of hyaluronic acid to replenish and retain moisture. The treatment provides instant, deep hydration that leaves skin calm and plump, while also improving skin texture and complexion. You can expect smoother fine lines, restored skin elasticity, improved barrier properties, and increased moisture levels, as well as increased resistance to external irritants."
+
+    },
+    {
+        "key": 4,
+        "title": "De-puff and Contour treatment",
+        "price":"$ 215",
+        "time": "45-60 min",
+        "tag":"popular",
+        "content": "Our caffeine-fueled de-puffing treatment reduces excess liquid and facial fat deposits, resulting in a more refined appearance. This treatment provides profound lymphatic drainage and detoxification of the skin. Lipolytic ingredients that break down fat penetrate deeply to reduce puffiness and add contouring."
+
+    },
+    {
+        "key": 5,
+        "title": "Wrinkle Freeze Treatment",
+        "price":"$ 225",
+        "time": "45-60 min",
+        "tag":"popular",
+        "content": "Our non-invasive treatment can help reduce the appearance of these wrinkles and relax your facial muscles. This peptide-powered concentrate targets wrinkles and is an excellent alternative to injections. By reducing muscle tension, your face will look more relaxed and open, giving you a younger and more cheerful appearance."
+
+    },
+    {
+        "key": 6,
+        "title": "Calm and Restore Treatment",
+        "price":"$ 225",
+        "time": "45-60 min",
+        "tag":"popular",
+        "content": "Our non-invasive treatment can help reduce the appearance of these wrinkles and relax your facial muscles. This peptide-powered concentrate targets wrinkles and is an excellent alternative to injections. By reducing muscle tension, your face will look more relaxed and open, giving you a younger and more cheerful appearance."
+
+    }
+]
+
+
+

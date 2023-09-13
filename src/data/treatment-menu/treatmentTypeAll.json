@@ -1,83 +1,393 @@
 
 [
     {
-        "group":"Pigmentation",
+        "group":"Brows and Lashes",
         "data": [
-        {
-            "key": 1,
-            "title": "GloGetter Level 3 HydraFacial treatment",
-            "price":"$ 325",
-            "time": "75 min",
-            "tag":"popular",
-            "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
-        },
-        {
-            "key": 2,
-            "title": "Hydrafacial Lift (includes Microcurrent)",
-            "price":"$ 300",
-            "time": "60 min",
-            "tag":"popular",
-            "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
-    
-        }
+            {
+                "key": 1,
+                "title": "Keratin Lash Lift Treatment",
+                "price":"$ 170",
+                "time": "60 min",
+                "tag":"popular",
+                "content": "This treatment is fundamentally different from all previously known procedures for eyelashes, such as eyelash extensions or eyelash perms. It is a unique, keratin-based lash-enhancement technology that boosts and lifts the natural eyelash without the need for fake eyelashes. It was created as a luxurious alternative to eyelash extensions, fake eyelashes, false lashes, and growth serums. This advanced technique and treatment can provide a beautiful result."
+            },
+            {
+                "key": 2,
+                "title": "Brow Lamination (Lift)",
+                "price":"$ 100",
+                "time": "45 min",
+                "tag":"popular",
+                "content": "This new trending treatment is recommended for people trying to achieve fuller and thicker “feathered” brows. The hairs are placed up and out while also relaxing them to lay flat on the skin. This treatment alone takes 45 mins. When you add it on to your lash lift treatment the total time is 1 hr and 30 mins for both services. The brow lift effect lasts for up to 6 weeks. Please check out some before and afters to see if this treatment is right for you!"
+        
+            },
+            {
+                "key": 3,
+                "title": "Keratin Lash Lift treatment + Brow Lamination Combo",
+                "price":"$ 325",
+                "time": "75 min",
+                "tag":"popular",
+                "content": "Save $10 when you book this combo of lashes and brows! Combine your Yumi Keratin Eyelash lift and Yumi Brow Lift (lamination)."  
+            }
         ]
     },
 
     {
-        "group":"Acne & Inflammation",
+        "group":"First-time Facial treatments",
         "data": [
     
             {
-                "key": 3,
-                "title": "Hydrafacial + DMK combo",
-                "price":"$ 325",
-                "time": "75 min",
-                "tag":"popular",
-                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."  
-            },
-            {
                 "key": 4,
-                "title": "GloGetter Level 3 HydraFacial treatment",
-                "price":"$ 325",
-                "time": "75 min",
+                "title": "First-time customer Skinnovation special facial",
+                "price":"$ 275",
+                "time": "120 min",
                 "tag":"popular",
-                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."   
+                "content": "Start with a detailed skin analysis report leveraging a state-of-the-art machine, go through product recommendations and get a recommended skincare routine and a data-driven treatment plan and finish off with a cleansing exfoliation mask."
             },
             {
                 "key": 5,
-                "title": "Hydrafacial Lift (includes Microcurrent)",
-                "price":"$ 300",
-                "time": "60 min",
+                "title": "First-time DMK client facial (signature enzyme therapy)",
+                "price":"$ 245",
+                "time": "90 min",
                 "tag":"popular",
-                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health." 
-            },
-            {
-                "key": 6,
-                "title": "Hydrafacial + DMK combo",
-                "price":"$ 325",
-                "time": "75 min",
-                "tag":"popular",
-                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
-        
-            },
-            {
-                "key": 7,
-                "title": "Hydrafacial + DMK combo22222",
-                "price":"$ 325",
-                "time": "75 min",
-                "tag":"popular",
-                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
-            },
-            {
-                "key": 8,
-                "title": "Hydrafacial + DMK combo3333",
-                "price":"$ 325",
-                "time": "75 min",
-                "tag":"popular",
-                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
+                "content": "Experience the magic of the DMK enzyme mask including a pre-treatment and 30 days’ worth of products. DMK enzyme mask was created to mimic your natural skin enzyme activity to bring your skin to a state of balance and boost the physiological function of your skin."
         
             }
           
+        ]
+    
+    },
+    {
+        "group":"HYDRAFACIAL™",
+        "data": [
+            {
+                "key": 6,
+                "title": "expand to learn more",
+                "price":"$ 275",
+                "time": "120 min",
+                "tag":"popular",
+                "content": "Known for delivering immediate results for a variety of skin conditions - the LED HydraFacial is a must-try for people who are looking to achieve the best skin of their life! Perfect before an event or special occasion. Hydrafacial is safe for everyone to use, it’s non-irritating, non-invasive and there is no downtime! Get your glow on!"
+            },
+            {
+                "key": 7,
+                "title": "GloGetter Level 1 HydraFacial treatment",
+                "price":"$ 235",
+                "time": "60 min",
+                "tag":"popular",
+                "content": "This is our Level 1 signature HydraFacial treatment that includes a deep cleanse and exfoliation."
+        
+            },
+            {
+                "key": 8,
+                "title": "GloMaster Level 2 HydraFacial treatment",
+                "price":"$ 280",
+                "time": "65 min",
+                "tag":"popular",
+                "content": "This is our level 2 Hydrafacial treatment enhanced with a personalized booster to address your specific skin concerns, LED red light therapy, and our signature gel mask."
+        
+            },
+            {
+                "key": 9,
+                "title": "GloPro Level 3 HydraFacial treatment",
+                "price":"$ 325",
+                "time": "75 min",
+                "tag":"popular",
+                "content": "This is our Level 3 Hydrafacial includes all the benefits of Level 1 and 2 with an added detoxifying lymph drainage to help remove unwanted build up to optimize your skin health."
+        
+            },
+            {
+                "key": 10,
+                "title": "Hydrafacial Lift (includes Microcurrent)",
+                "price":"$ 325",
+                "time": "100 min",
+                "tag":"popular",
+                "content": "Combining two great modalities Hydrafacial GloMaster + Microcurrent technology helps to exfoliate, boost hydration and stimulate facial muscles to achieve a non-invasive facelift."
+        
+            },
+            {
+                "key": 11,
+                "title": "Hydrafacial + DMK combo",
+                "price":"$ 375",
+                "time": "100 min",
+                "tag":"popular",
+                "content": "The perfect combo for clients wanting a complete deep pore cleanse upgraded with deep internal skin nourishment with our innovative enzyme mask for true circulation and lymphatic drainage. This treatment is great for someone who is trying to get immediate results with little to no downtime."
+        
+            },
+            {
+                "key": 12,
+                "title": "Hydrafacial + Endosphères combo (new!)",
+                "price":"$ 325",
+                "time": "80 min",
+                "tag":"popular",
+                "content": "This combo works beautifully together to combat aging, sagging, dull skin. Starting with our endospheres facial device, we will focus on massaging the muscles and targeting sagging areas while Hydrafacial will focus more on the surface layer of the skin (decongesting & serum infusion) This treatment also includes our LED therapy while you mask"
+        
+            }
+          
+        ]
+    
+    },
+    {
+        "group":"DMK",
+        "data": [
+            {
+                "key": 13,
+                "title": "Level 1 DMK Facial Treatment",
+                "price":"$ 215",
+                "time": "90 min",
+                "tag":"popular",
+                "content": "Restores skin to its peak condition. This signature DMK enzyme treatment works within the skin. The enzymes aim to strengthen the structural integrity of the skin to create a healthy environment for cells to live and thrive in. Designed to address various skin concerns such as congestion, acne, hyperpigmentation, lines and wrinkles, dryness. Includes exfoliant, pretreatment, enzyme mask, post-treatment, and Red LED light therapy."
+        
+            },
+            {
+                "key": 14,
+                "title": "Level 2 DMK Facial Treatment",
+                "price":"$ 255",
+                "time": "100 -120 min",
+                "tag":"popular",
+                "content": "Signature DMK enzyme treatment with extraction + advanced method of exfoliation like microdermabrasion, chemical peel chosen towards your skin concern in combination with Red LED treatment shows excellent results for congestion, acne, deep-rooted hyperpigmentation."
+        
+            },
+            {
+                "key": 15,
+                "title": "Level 3 DMK Facial Treatment",
+                "price":"$ 275",
+                "time": "120 min",
+                "tag":"popular",
+                "content": "Next level treatment, such as Alkaline wash as a chemical peel, spot treatment for RP, liquid laser, Follicuzyme®, evacuderm."
+        
+            },
+            {
+                "key": 16,
+                "title": "Level 4 DMK Facial Treatment",
+                "price":"$ 325",
+                "time": "120 min",
+                "tag":"popular",
+                "content": "Superior level of the treatment which helps to get you red carpet ready. Firm up, tighten, and brighten your skin instantly with the DMK special occasion treatment."
+        
+            }
+          
+        ]
+    
+    },
+    {
+        "group":"Targeted special treatments",
+        "data": [
+            {
+                "key": 17,
+                "title": "expand to learn more",
+                "price":"$ 275",
+                "time": "120 min",
+                "tag":"popular",
+                "content":"Skinnovation believes in effective, non-invasive treatments and products. We offer Meder Beauty products, created by dermatologist Dr. Tiina Meder in a Swiss laboratory and backed by scientific research. They're safe for all skin types and stages of life, including pregnancy, breastfeeding, and menopause. "
+            },
+            {
+                "key": 18,
+                "title": "Lift and Glow Treatment",
+                "price":"$ 215",
+                "time": "45-60 min",
+                "tag":"popular",
+                "content": "This wrinkle-corrective treatment is perfect for those with fine lines, wrinkles, or loss of skin elasticity. By using active ingredients, it increases the synthesis of structural proteins in the skin, restoring elasticity and reducing the appearance of wrinkles and lines. The results are firmer, more resilient, brighter, smoother, and more even-toned skin. This treatment is a great option for those with sagging skin, loss of elasticity, fine lines, and wrinkles."
+        
+            },
+            {
+                "key": 19,
+                "title": "HydraMatrix treatment",
+                "price":"$ 215",
+                "time": "45-60 min",
+                "tag":"popular",
+                "content": "Indulge in the HydraMatrix treatment if you have dry, dehydrated, tired-looking, flaky, or sensitized skin. This treatment deeply hydrates by restoring water in multiple layers of the skin. It uses high and low molecular forms of hyaluronic acid to replenish and retain moisture. The treatment provides instant, deep hydration that leaves skin calm and plump, while also improving skin texture and complexion. You can expect smoother fine lines, restored skin elasticity, improved barrier properties, and increased moisture levels, as well as increased resistance to external irritants."
+        
+            },
+            {
+                "key": 20,
+                "title": "De-puff and Contour treatment",
+                "price":"$ 215",
+                "time": "45-60 min",
+                "tag":"popular",
+                "content": "Our caffeine-fueled de-puffing treatment reduces excess liquid and facial fat deposits, resulting in a more refined appearance. This treatment provides profound lymphatic drainage and detoxification of the skin. Lipolytic ingredients that break down fat penetrate deeply to reduce puffiness and add contouring."
+        
+            },
+            {
+                "key": 21,
+                "title": "Wrinkle Freeze Treatment",
+                "price":"$ 225",
+                "time": "45-60 min",
+                "tag":"popular",
+                "content": "Our non-invasive treatment can help reduce the appearance of these wrinkles and relax your facial muscles. This peptide-powered concentrate targets wrinkles and is an excellent alternative to injections. By reducing muscle tension, your face will look more relaxed and open, giving you a younger and more cheerful appearance."
+        
+            },
+            {
+                "key": 22,
+                "title": "Calm and Restore Treatment",
+                "price":"$ 225",
+                "time": "45-60 min",
+                "tag":"popular",
+                "content": "Our non-invasive treatment can help reduce the appearance of these wrinkles and relax your facial muscles. This peptide-powered concentrate targets wrinkles and is an excellent alternative to injections. By reducing muscle tension, your face will look more relaxed and open, giving you a younger and more cheerful appearance."
+        
+            }
+          
+        ]
+    
+    },
+    {
+        "group":"Dermaplaning",
+        "data": [
+            {
+                "key": 23,
+                "title": "Dermaplaning Classic Facial",
+                "price":"$ 195",
+                "time": "45 min",
+                "tag":"popular",
+                "content": "cleansing, dermaplane, LED light treatment, hydrating/soothing mask and finishes with serums/sunscreen"
+        
+            },
+            {
+                "key": 24,
+                "title": "Dermaplaning GloGetter",
+                "price":"$ 255",
+                "time": "75 min",
+                "tag":"popular",
+                "content": "all the benefits of Hydrafacial level 1 along with dermaplane."
+        
+            },
+            {
+                "key": 25,
+                "title": "Dermaplaning GloPro",
+                "price":"$ 345",
+                "time": "90 min",
+                "tag":"popular",
+                "content": "all the benefits of Hydrafacial level 3 along with dermaplane."
+        
+            }
+        ]
+    
+    },
+    {
+        "group":"Microcurrent facial treatment",
+        "data": [
+            {
+                "key": 26,
+                "title": "expand to learn more",
+                "price":"$ 275",
+                "time": "120 min",
+                "tag":"popular",
+                "content":"Featuring our top-of-the-line microcurrent CACI machine. Microcurrent in aesthetics is commonly described as facial toning or non-surgical face lifting” due to the dramatic lifting effect that microcurrent has on facial muscles and contours."
+            },
+            {
+                "key": 27,
+                "title": "Full microcurrent facial",
+                "price":"$ 245",
+                "time": "80 min",
+                "tag":"popular",
+                "content": "This treatment includes cleansing, exfoliation, extractions along with the microcurrent machine to lift and tone the facial muscles and tissue followed by a hydrating mask and led therapy."
+        
+            },
+            {
+                "key": 28,
+                "title": "Maintenance microcurrent treatment",
+                "price":"$ 195",
+                "time": "75 min",
+                "tag":"popular",
+                "content": "This treatment only includes cleanse, microcurrent treatment mask, and LED."
+        
+            },
+            {
+                "key": 29,
+                "title": "Microcurrent + DMK",
+                "price":"$ 350",
+                "time": "155 min",
+                "tag":"popular",
+                "content": "This is a customized treatment using microcurrent and DMK enzyme for the ultimate lift. Recommended for severely sagging skin or prematurely-aging skin."
+        
+            },
+            {
+                "key": 30,
+                "title": "Microcurrent Packages (set of 10 sessions)",
+                "price":"1750 for the set of 10 sessions",
+                "time": "75 min",
+                "tag":"popular",
+                "content": "Microcurrent stimulation delivers tiny electrical impulses that mirror the body’s natural bioelectrical field. The benefits are re-education of the muscles - tighter, stronger facial muscles, increased blood and lymph circulation, enhanced penetration of active ingredients, increased production of collagen and elastin, and increased mitochondrial activity. To achieve the best results series of treatments are recommended."
+        
+            }
+        ]
+    
+    },
+    {
+        "group":"Signature Skinnovation Facials",
+        "data": [
+            {
+                "key": 31,
+                "title": "Deep-Pore Cleanse Treatment",
+                "price":"$ 195",
+                "time": "60 min",
+                "tag":"popular",
+                "content":"Our Deep Pore Cleanse Treatment is designed to provide a nourishing experience for your skin.  Using specialized techniques and high-quality products, this treatment effectively targets and cleanses deep-seated impurities from your pores.  As a result, your skin will feel refreshed and hydrated, with a noticeably improvement in texture and appearance."
+            },
+            {
+                "key": 32,
+                "title": "Endosphères facial treatment",
+                "price":"$ 190",
+                "time": "60 min",
+                "tag":"popular",
+                "content": "Our incredible endospheres machine works for the face too. The smaller handheld device delivers lymphatic drainage while massaging the muscles and stimulating collagen production. This facial service is great for reducing puffiness and lifting/contouring facial tissue. This treatment also includes a hydrating jelly mask paired with our professional-grade LED light. Experience this rejuvenating facial service with any of our trained estheticians."
+        
+            }
+        ]
+    
+    },
+    {
+        "group":"Body treatments",
+        "data": [
+            {
+                "key": 33,
+                "title": "expand to learn more",
+                "price":"$ 275",
+                "time": "120 min",
+                "tag":"popular",
+                "content":"We are now offering multiple body treatments - Endosphères Therapy and LED Bed:"
+            },
+            {
+                "key": 34,
+                "title": "Baby Feet Treatment (new!)",
+                "price":"$ 65",
+                "time": "30 min",
+                "tag":"popular",
+                "content": "An advanced foot peel that takes less than 30 minutes! This amazing treatment will have your feet feeling baby soft. Rids calloused, cracked, dry feet. The peel is left on for 15 mins then removed with a relaxing hot towel. Heels and other rough calloused areas are then exfoliated revealing smooth beautiful skin! What makes this treatment unlike any other foot peel is there is zero downtime...a great stand alone or add on to any service!"
+        
+            },
+            {
+                "key": 35,
+                "title": "Back Treatment (new!)",
+                "price":"$ 210",
+                "time": "60 min",
+                "tag":"popular",
+                "content": "This is an advanced skin revision for your back. Whether it's sun damage, bacne (back acne), or aging skin… let us treat you to one of our relaxing yet innovative back treatments. 1 hr treatment includes cleanse, exfoliation, extractions, enzyme mask therapy + LED, and finishing products."
+        
+            },
+            {
+                "key": 36,
+                "title": "LED Bed Treatment",
+                "price":"$ 345",
+                "time": "90 min",
+                "tag":"popular",
+                "content": "The First LED Bed to gain over-the-counter FDA Clearance. FDA Cleared to temporarily relieve muscle, joint, and arthritic pain and increase local blood circulation. 18,240 LEDs designed to rejuvenate, repair and energize every cell in the body. Natural and non-invasive treatment. LightStim MultiWave® Patented Technology."
+        
+            },
+            {
+                "key": 37,
+                "title": "Special Pricing (single session)",
+                "price":"$ 100",
+                "time": "45 min",
+                "tag":"popular"
+        
+            },
+            {
+                "key": 6,
+                "title": "10 Session bundle",
+                "price":"$ 800",
+                "time": "55 min",
+                "tag":"popular"
+        
+            }
         ]
     
     }

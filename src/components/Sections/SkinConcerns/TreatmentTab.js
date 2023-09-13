@@ -7,6 +7,11 @@ import dataLashes from "../../../data/treatment-menu/dataTreatmentLashes.json";
 import dataFirst from "../../../data/treatment-menu/dataTreatmentFirstTime.json";
 import dataHydra from "../../../data/treatment-menu/dataTreatmentHydrafacial.json";
 import dataDMK from "../../../data/treatment-menu/dataTreatmentDMK.json";
+import dataTargeted from "../../../data/treatment-menu/dataTreatmentTargeted.json";
+import dataMicrocurrent from "../../../data/treatment-menu/dataTreatmentMicrocurrent.json";
+import dataSignature from "../../../data/treatment-menu/dataTreatmentSignature.json";
+import dataDermaplaning from "../../../data/treatment-menu/dataTreatmentDermaplaning.json";
+import dataBody from "../../../data/treatment-menu/dataTreatmentBody.json";
 
 import AccordionTreatment from "../../../components/Sections/SkinConcerns/AccordionTreatment";
 
@@ -67,30 +72,35 @@ const contentTab = [
     title: "Targeted special",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+    data: dataTargeted,
   },
   {
     id: 6,
     title: "Dermaplaning",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+    data: dataDermaplaning,
   },
   {
     id: 7,
     title: "Microcurrent facial",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+    data: dataMicrocurrent,
   },
   {
     id: 8,
     title: "Signature",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+    data: dataSignature,
   },
   {
     id: 9,
     title: "Body treatments",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+    data: dataBody,
   },
 ];
 

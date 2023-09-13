@@ -22,8 +22,6 @@ import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
 import TreatmentTypeTwo from "../components/Sections/SkinConcerns/TreatmentTypeTwo";
 import AccordionTreatment from "../components/Sections/SkinConcerns/AccordionTreatment";
 
-
-
 const Home = ({
   gadgets,
   products,
@@ -61,7 +59,7 @@ const Home = ({
         />
       </div>
       <div className="mt-[80px] max-md:mt-[48px] max-w-[752px] mx-auto">
-        <TreatmentTypeTwo data={dataTreatment} className="mt-[32px]" />
+        <TreatmentTypeTwo className="mt-[32px]" />
       </div>
     </LayoutOne>
   );
