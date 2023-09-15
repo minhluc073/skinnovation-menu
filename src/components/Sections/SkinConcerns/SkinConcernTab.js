@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
+import { useRouter } from "next/router";
 
 const data = [
   {
@@ -34,6 +35,10 @@ const data = [
 ];
 
 export default function SkinConcernTab({ title }) {
+  // console.log("item", item);
+  const router = useRouter();
+
+  console.log("hhh", router);
   const [tabIndex, setTabIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -257,20 +262,3 @@ export default function SkinConcernTab({ title }) {
     </>
   );
 }
-
-// import React from "react";
-// import Slider from "react-slick";
-
-// export default function ProductDetailSlideOne({ images }) {
-//   return (
-//     <div className="product-detail__slide-one">
-//       <Slider {...settings}>
-//         {data?.map((img, index) => (
-//           <div key={index} className="slider__item">
-//             hhhhhhh
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// }

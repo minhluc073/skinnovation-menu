@@ -13,7 +13,7 @@ export default function TreatmentType({ title, center, data }) {
       <ul className="mt-[32px] grid grid-cols-5 gap-4 max-md:mt-[16px] max-sm:gap-[8px] max-md:grid-cols-2">
         {data?.slice(4, 9)?.map((item) => (
           <li key={item.id} className="max-md:last:col-[1_/_span_2]">
-            <Link href="#">
+            <Link href="/treatment-type">
               <a
                 className="flex flex-col items-center justify-center gap-4 max-w-[176px] h-[176px] 
                 rounded-[24px] border-2 border-solid border-light p-[30px] max-md:max-w-full max-md:h-auto max-sm:gap-3"

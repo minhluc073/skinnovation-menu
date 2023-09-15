@@ -55,7 +55,7 @@ export default function TreatmentTypeTwo({ className }) {
               </li>
             </ul>
             <div
-              className="hidden max-sm:block fixed top-0 left-0 right-0 h-[100vh] bg-[rgba(113,78,87,0.4)]"
+              className="hidden max-sm:block fixed z-[100] top-0 left-0 right-0 h-[100vh] bg-[rgba(113,78,87,0.4)]"
               onClick={closePop}
             >
               {/* <div className="overlay"></div> */}

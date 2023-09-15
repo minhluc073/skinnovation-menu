@@ -1,3 +1,4 @@
+import SkinConcernTab from "./SkinConcernTab";
 import Link from "next/link";
 
 export default function SkinConcernOne({ title, center, data }) {
@@ -13,7 +14,7 @@ export default function SkinConcernOne({ title, center, data }) {
       <ul className="mt-[32px] grid grid-cols-2 max-sm:grid-cols-1 gap-[16px] max-md:mt-[16px] max-sm:gap-[8px]">
         {data?.slice(0, 4)?.map((item) => (
           <li key={item.id}>
-            <Link href="#">
+            <Link href="/skin-concern">
               <a className="concern-item flex items-center justify-between">
                 <span className="relative z-[2] text-[18px] font-medium leading-6 max-sm:text-[16px] max-sm:font-normal">
                   {item.title}
@@ -23,6 +24,7 @@ export default function SkinConcernOne({ title, center, data }) {
                 ></span>
               </a>
             </Link>
+            {/* <SkinConcernTab item={item} /> */}
           </li>
         ))}
       </ul>
