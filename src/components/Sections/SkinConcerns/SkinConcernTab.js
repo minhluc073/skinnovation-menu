@@ -38,16 +38,16 @@ const data = [
 export default function SkinConcernTab({ title, acIdx }) {
   console.log("id-active", acIdx);
 
-  const [tabIndex, setTabIndex] = useState(acIdx);
+  const [tabIndex, setTabIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
   console.log("tabindex", tabIndex);
 
   useEffect(() => {
     if (acIdx) {
-      setTabIndex(acIdx);
+      setTabIndex(Number(acIdx));
     }
-  }, [acIdx]);
+  }, [Number(acIdx)]);
 
   const settings = {
     customPaging: function (i) {
