@@ -1,10 +1,11 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
 import { useRouter } from "next/router";
+import dataSkinconcern from "../../../data/treatment-menu/skinconcern.json";
 
 const data = [
   {
@@ -34,13 +35,19 @@ const data = [
   },
 ];
 
-export default function SkinConcernTab({ title }) {
-  // console.log("item", item);
-  const router = useRouter();
+export default function SkinConcernTab({ title, acIdx }) {
+  console.log("id-active", acIdx);
 
-  console.log("hhh", router);
-  const [tabIndex, setTabIndex] = useState(0);
+  const [tabIndex, setTabIndex] = useState(acIdx);
   const [isActive, setIsActive] = useState(false);
+
+  console.log("tabindex", tabIndex);
+
+  useEffect(() => {
+    if (acIdx) {
+      setTabIndex(acIdx);
+    }
+  }, [acIdx]);
 
   const settings = {
     customPaging: function (i) {
@@ -117,10 +124,14 @@ export default function SkinConcernTab({ title }) {
         </h3>
       </div>
       <div className="max-w-[950px] mx-auto pl-[6rem] wrap-slick-concern mt-[24px] max-lg:max-w-[752px] max-lg:pl-[24px] max-xs:mt-[16px]">
-        <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
+        <Tabs
+          defaultIndex={tabIndex}
+          selectedIndex={tabIndex}
+          onSelect={(index) => setTabIndex(index)}
+        >
           <TabList>
             <Slider {...settings}>
-              {data.map((item, idx) => (
+              {dataSkinconcern.slice(0, 4).map((item, idx) => (
                 <CustomTab
                   onClick={() => setTabIndex(idx)}
                   className={tabIndex === idx ? "activeTab" : ""}
@@ -135,71 +146,6 @@ export default function SkinConcernTab({ title }) {
                   </div>
                 </CustomTab>
               ))}
-              {/* <CustomTab
-                onClick={() => setTabIndex(0)}
-                className={tabIndex === 0 ? "activeTab" : ""}
-              >
-                <div className="w-auto slick-concern cursor-pointer">
-                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
-                    <span className="text-[16px] leading-[24px]">
-                      Acne & Inflammation
-                    </span>
-                    <span className={`icon-icon2 text-[24px]`}></span>
-                  </div>
-                </div>
-              </CustomTab>
-              <CustomTab
-                onClick={() => setTabIndex(1)}
-                className={tabIndex === 1 ? "activeTab" : ""}
-              >
-                <div className="w-auto slick-concern cursor-pointer">
-                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
-                    <span className="text-[16px] leading-[24px]">
-                      Pigmentation
-                    </span>
-                    <span className={`icon-icon1 text-[24px]`}></span>
-                  </div>
-                </div>
-              </CustomTab>
-              <CustomTab
-                onClick={() => setTabIndex(2)}
-                className={tabIndex === 2 ? "activeTab" : ""}
-              >
-                <div className="w-auto slick-concern cursor-pointer">
-                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
-                    <span className="text-[16px] leading-[24px]">
-                      Redness & Sensitivity
-                    </span>
-                    <span className={`icon-icon3 text-[24px]`}></span>
-                  </div>
-                </div>
-              </CustomTab>
-              <CustomTab
-                onClick={() => setTabIndex(3)}
-                className={tabIndex === 3 ? "activeTab" : ""}
-              >
-                <div className="w-auto slick-concern cursor-pointer">
-                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
-                    <span className="text-[16px] leading-[24px]">
-                      Age Management
-                    </span>
-                    <span className={`icon-icon4 text-[24px]`}></span>
-                  </div>
-                </div>
-              </CustomTab>
-              <CustomTab
-                onClick={() => setTabIndex(4)}
-                className={tabIndex === 4 ? "activeTab" : ""}
-              >
-                <div className="w-auto slick-concern cursor-pointer">
-                  <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
-                    <span className="text-[16px] leading-[24px]">
-                      Age Management
-                    </span>
-                    <span className={`icon-icon2 text-[24px]`}></span>
-                  </div>
-                </div>
-              </CustomTab> */}
             </Slider>
           </TabList>
           <TabPanel>
@@ -228,17 +174,6 @@ export default function SkinConcernTab({ title }) {
             <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Redness & Sensitivity
-              </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="mt-[48px] pl-[10px] max-md:pl-0">
-              <h2 className="text-[#000] text-[24px] leading-[24px]">
-                Age Management
               </h2>
               <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
                 Known for delivering immediate results for a variety of skin

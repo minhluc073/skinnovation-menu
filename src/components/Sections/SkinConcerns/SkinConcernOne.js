@@ -12,9 +12,16 @@ export default function SkinConcernOne({ title, center, data }) {
         {title}
       </h3>
       <ul className="mt-[32px] grid grid-cols-2 max-sm:grid-cols-1 gap-[16px] max-md:mt-[16px] max-sm:gap-[8px]">
-        {data?.slice(0, 4)?.map((item) => (
+        {data?.slice(0, 4)?.map((item, idx) => (
           <li key={item.id}>
-            <Link href="/skin-concern">
+            <Link
+              href={{
+                pathname: "/skin-concern",
+                query: {
+                  id: idx, // pass the id
+                },
+              }}
+            >
               <a className="concern-item flex items-center justify-between">
                 <span className="relative z-[2] text-[18px] font-medium leading-6 max-sm:text-[16px] max-sm:font-normal">
                   {item.title}

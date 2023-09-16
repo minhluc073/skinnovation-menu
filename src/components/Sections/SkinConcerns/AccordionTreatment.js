@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 
 export default function AccordionTreatment({ data, className, filter, mt }) {
+  console.log("filter", filter);
+
   const [isActive, setIsActive] = useState({
     status: false,
     key: null,

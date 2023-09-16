@@ -19,7 +19,9 @@ import dataTreatment from "../data/treatment-menu/treatmentType.json";
 import TreatmentSlider from "../components/Sections/Slider/TreatmentSlider";
 import SkinConcernTab from "../components/Sections/SkinConcerns/SkinConcernTab";
 import AccordionTreatment from "../components/Sections/SkinConcerns/AccordionTreatment";
-
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const SkinConcern = ({
   gadgets,
@@ -31,6 +33,21 @@ const SkinConcern = ({
   giftCards,
   specials,
 }) => {
+  const router = useRouter();
+  console.log("hhh", router);
+
+  const [filter, setFilter] = useState("Popular");
+
+  const [activeIdx, setIsActiveIdx] = useState(0);
+
+  useEffect(() => {
+    if (router?.query) {
+      let { id } = router?.query;
+      console.log("idx", id);
+      setIsActiveIdx(id);
+    }
+  }, [router]);
+
   return (
     <LayoutOne title="skin concern" className="-style-1">
       {/* <HomeSlider data={slider} className="-style-1" showDots /> */}
@@ -43,11 +60,11 @@ const SkinConcern = ({
         </div>
       </div>
       <div className="mt-[40px] max-md:mt-[32px]">
-        <SkinConcernTab title="Skin concerns" />
+        <SkinConcernTab title="Skin concerns" acIdx={activeIdx} />
       </div>
       <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
         <div className="container">
-          <AccordionTreatment data={dataTreatment} filter={"Popular"} />
+          <AccordionTreatment data={dataTreatment} filter={filter} />
         </div>
       </div>
     </LayoutOne>
