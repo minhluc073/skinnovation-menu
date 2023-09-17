@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import menuTab from "../../../data/treatment-menu/skintreatmentTab.json";
+import dataSkinconcern from "../../../data/treatment-menu/skinconcern.json";
 import dataLashes from "../../../data/treatment-menu/dataTreatmentLashes.json";
 import dataFirst from "../../../data/treatment-menu/dataTreatmentFirstTime.json";
 import dataHydra from "../../../data/treatment-menu/dataTreatmentHydrafacial.json";
@@ -12,99 +12,88 @@ import dataMicrocurrent from "../../../data/treatment-menu/dataTreatmentMicrocur
 import dataSignature from "../../../data/treatment-menu/dataTreatmentSignature.json";
 import dataDermaplaning from "../../../data/treatment-menu/dataTreatmentDermaplaning.json";
 import dataBody from "../../../data/treatment-menu/dataTreatmentBody.json";
+import dataTreatment from "../../../data/treatment-menu/treatmentType";
 
 import AccordionTreatment from "../../../components/Sections/SkinConcerns/AccordionTreatment";
-
-// const menuTab = [
-//   {
-//     id: 1,
-//     title: "Face",
-//   },
-//   {
-//     id: 2,
-//     title: "First timers",
-//   },
-//   {
-//     id: 3,
-//     title: "Lashes",
-//   },
-//   {
-//     id: 4,
-//     title: "For regulars",
-//   },
-//   {
-//     id: 5,
-//     title: "Weddings & events",
-//   },
-// ];
+import { useEffect } from "react";
 
 const contentTab = [
   {
     id: 1,
-    title: "Lashes",
-    content:
-      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataLashes,
-  },
-  {
-    id: 2,
     title: "First timers",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
     data: dataFirst,
   },
   {
-    id: 3,
-    title: "Hydrafacial",
+    id: 2,
+    title: "For regulars",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataHydra,
+    data: dataTreatment,
+  },
+  {
+    id: 3,
+    title: "Face",
+    content:
+      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+    data: dataTreatment,
   },
   {
     id: 4,
-    title: "DMK",
+    title: "Lashes",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataDMK,
+    data: dataLashes,
   },
   {
     id: 5,
-    title: "Targeted special",
+    title: "Weddings & events",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataTargeted,
+    data: dataTreatment,
   },
-  {
-    id: 6,
-    title: "Dermaplaning",
-    content:
-      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataDermaplaning,
-  },
-  {
-    id: 7,
-    title: "Microcurrent facial",
-    content:
-      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataMicrocurrent,
-  },
-  {
-    id: 8,
-    title: "Signature",
-    content:
-      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataSignature,
-  },
-  {
-    id: 9,
-    title: "Body treatments",
-    content:
-      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-    data: dataBody,
-  },
+  // {
+  //   id: 6,
+  //   title: "Dermaplaning",
+  //   content:
+  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+  //   data: dataDermaplaning,
+  // },
+  // {
+  //   id: 7,
+  //   title: "Microcurrent facial",
+  //   content:
+  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+  //   data: dataMicrocurrent,
+  // },
+  // {
+  //   id: 8,
+  //   title: "Signature",
+  //   content:
+  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+  //   data: dataSignature,
+  // },
+  // {
+  //   id: 9,
+  //   title: "Body treatments",
+  //   content:
+  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
+  //   data: dataBody,
+  // },
 ];
 
-export default function TreatmentTab({ title }) {
+export default function TreatmentTab({ title, acIdx }) {
+  const [filter, setFilter] = useState("Popular");
+
+  const [tabIndex, setTabIndex] = useState(0);
+
+  useEffect(() => {
+    if (acIdx) {
+      setTabIndex(Number(acIdx));
+    }
+  }, [Number(acIdx)]);
+
   return (
     <>
       <div className="container">
@@ -113,7 +102,12 @@ export default function TreatmentTab({ title }) {
         >
           {title}
         </h3>
-        <Tabs className="mt-[24px] max-sm:mt-[16px]">
+        <Tabs
+          defaultIndex={tabIndex}
+          selectedIndex={tabIndex}
+          onSelect={(index) => setTabIndex(index)}
+          className="mt-[24px] max-sm:mt-[16px]"
+        >
           <TabList className="flex items-center gap-[8px] flex-wrap max-xs:mr-[-20px]">
             <li>
               <a
@@ -126,7 +120,7 @@ export default function TreatmentTab({ title }) {
                 </span>
               </a>
             </li>
-            {menuTab?.map((item) => (
+            {dataSkinconcern.slice(4, 9)?.map((item, idx) => (
               <Tab
                 key={item.id}
                 className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary"
@@ -134,78 +128,8 @@ export default function TreatmentTab({ title }) {
                 {item.title}
               </Tab>
             ))}
-            {/* <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
-              Face
-            </Tab>
-            <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
-              First timers
-            </Tab>
-            <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
-              Lashes
-            </Tab>
-            <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
-              For regulars
-            </Tab>
-            <Tab className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary">
-              Weddings & events
-            </Tab> */}
           </TabList>
-          {/* <div className="mt-[48px] max-sm:mt-[32px]">
-            <TabPanel>
-              <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
-                Face
-              </h5>
-              <p className="text-[16px] leading-[24px] text-[#000]">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
-                Face
-              </h5>
-              <p className="text-[16px] leading-[24px] text-[#000]">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
-                First timers
-              </h5>
-              <p className="text-[16px] leading-[24px] text-[#000]">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
-                Lashes
-              </h5>
-              <p className="text-[16px] leading-[24px] text-[#000]">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
-                For regulars
-              </h5>
-              <p className="text-[16px] leading-[24px] text-[#000]">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <h5 className="mb-[16px] text-[#000] text-[24px] leading-[24px]">
-                Weddings & events
-              </h5>
-              <p className="text-[16px] leading-[24px] text-[#000]">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </TabPanel>
-          </div> */}
+
           <div className="mt-[48px] max-sm:mt-[32px]">
             {contentTab?.map((item) => (
               <TabPanel>
@@ -216,7 +140,7 @@ export default function TreatmentTab({ title }) {
                   {item.content}
                 </p>
                 <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
-                  <AccordionTreatment data={item?.data} filter={"Popular"} />
+                  <AccordionTreatment data={item?.data} filter={filter} />
                 </div>
               </TabPanel>
             ))}

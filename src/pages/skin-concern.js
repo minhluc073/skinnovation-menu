@@ -34,16 +34,13 @@ const SkinConcern = ({
   specials,
 }) => {
   const router = useRouter();
-  console.log("hhh", router);
-
-  const [filter, setFilter] = useState("Popular");
 
   const [activeIdx, setIsActiveIdx] = useState(0);
 
   useEffect(() => {
     if (router?.query) {
       let { id } = router?.query;
-      console.log("idx", id);
+      // console.log("idx", id);
       setIsActiveIdx(id);
     }
   }, [router]);
@@ -62,11 +59,11 @@ const SkinConcern = ({
       <div className="mt-[40px] max-md:mt-[32px]">
         <SkinConcernTab title="Skin concerns" acIdx={activeIdx} />
       </div>
-      <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
+      {/* <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
         <div className="container">
           <AccordionTreatment data={dataTreatment} filter={filter} />
         </div>
-      </div>
+      </div> */}
     </LayoutOne>
   );
 };

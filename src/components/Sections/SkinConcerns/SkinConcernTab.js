@@ -6,42 +6,45 @@ import "../../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
 import { useRouter } from "next/router";
 import dataSkinconcern from "../../../data/treatment-menu/skinconcern.json";
+import dataTreatment from "../../../data/treatment-menu/treatmentType";
+import AccordionTreatment from "../../../components/Sections/SkinConcerns/AccordionTreatment";
 
-const data = [
+const contentTab = [
   {
     id: 1,
-    title: "Acne & Inflammation",
-    icon: "icon-icon2",
+    title: "Pigmentation",
+    content:
+      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
     id: 2,
-    title: "Pigmentation",
-    icon: "icon-icon1",
+    title: "Acne & Inflammation",
+    content:
+      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
     id: 3,
     title: "Redness & Sensitivity",
-    icon: "icon-icon3",
+    content:
+      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
     id: 4,
     title: "Age Management",
-    icon: "icon-icon4",
-  },
-  {
-    id: 5,
-    title: "Pigmentation",
-    icon: "icon-icon2",
+    content:
+      "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
 ];
 
 export default function SkinConcernTab({ title, acIdx }) {
-  console.log("id-active", acIdx);
+  // console.log("id-active", acIdx);
+
+  const [filter, setFilter] = useState("Popular");
 
   const [tabIndex, setTabIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
-  console.log("tabindex", tabIndex);
+  // console.log("tabindex", tabIndex);
 
   useEffect(() => {
     if (acIdx) {
@@ -71,7 +74,7 @@ export default function SkinConcernTab({ title, acIdx }) {
     // arrows: false,
     // buttons: false,
     prevArrow: (
-      <a href="#">{/* <i className="icon-down text-primary"></i> */}</a>
+      <a href="/">{/* <i className="icon-down text-primary"></i> */}</a>
     ),
     nextArrow: (
       <a href="#">
@@ -148,18 +151,24 @@ export default function SkinConcernTab({ title, acIdx }) {
               ))}
             </Slider>
           </TabList>
-          <TabPanel>
-            <div className="mt-[48px] pl-[10px] max-md:pl-0">
-              <h2 className="text-[#000] text-[24px] leading-[24px]">
-                Acne & Inflammation
-              </h2>
-              <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
-                Known for delivering immediate results for a variety of skin
-                conditions — the LED HydraFacial is a must-try for
-              </p>
-            </div>
-          </TabPanel>
-          <TabPanel>
+          {/* <TabPanel> */}
+          <div className="mt-[48px] pl-[10px] max-md:pl-0 max-lg:pr-[24px]">
+            {contentTab?.map((item) => (
+              <TabPanel>
+                <h2 className="text-[#000] text-[24px] leading-[24px]">
+                  {item.title}
+                </h2>
+                <p className="mt-[16px] pr-[18rem] text-[16px] leading-[24px] text-[#000] max-md:pr-0">
+                  {item.content}
+                </p>
+                <div className="mt-[48px] max-sm:mt-[24px]">
+                  <AccordionTreatment data={dataTreatment} filter={filter} />
+                </div>
+              </TabPanel>
+            ))}
+          </div>
+          {/* </TabPanel> */}
+          {/* <TabPanel>
             <div className="mt-[48px] pl-[10px] max-md:pl-0">
               <h2 className="text-[#000] text-[24px] leading-[24px]">
                 Pigmentation
@@ -191,7 +200,7 @@ export default function SkinConcernTab({ title, acIdx }) {
                 conditions — the LED HydraFacial is a must-try for
               </p>
             </div>
-          </TabPanel>
+          </TabPanel> */}
         </Tabs>
       </div>
     </>

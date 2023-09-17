@@ -21,6 +21,9 @@ import SkinConcernTab from "../components/Sections/SkinConcerns/SkinConcernTab";
 import TreatmentType from "../components/Sections/SkinConcerns/TreatmentType";
 import AccordionTreatment from "../components/Sections/SkinConcerns/AccordionTreatment";
 import TreatmentTab from "../components/Sections/SkinConcerns/TreatmentTab";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const TreatmentMenu = ({
   gadgets,
@@ -32,6 +35,18 @@ const TreatmentMenu = ({
   giftCards,
   specials,
 }) => {
+  const router = useRouter();
+
+  const [activeIdx, setIsActiveIdx] = useState(0);
+
+  useEffect(() => {
+    if (router?.query) {
+      let { id } = router?.query;
+      // console.log("idx", id);
+      setIsActiveIdx(id);
+    }
+  }, [router]);
+
   return (
     <LayoutOne title="treatment type" className="-style-1">
       {/* <HomeSlider data={slider} className="-style-1" showDots /> */}
@@ -44,7 +59,7 @@ const TreatmentMenu = ({
         </div>
       </div>
       <div className="mt-[40px] max-md:mt-[32px]  max-w-[752px] mx-auto">
-        <TreatmentTab title="Treatment type" />
+        <TreatmentTab title="Treatment type" acIdx={activeIdx} />
       </div>
       {/* <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
         <div className="container">
