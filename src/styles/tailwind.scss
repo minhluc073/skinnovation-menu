@@ -92,33 +92,34 @@ html {
         transform: rotateX(0deg);
     }
 }
-
+.slick-prev,
 .slick-next {
     display: none !important;
 }
+
 .wrap-slick-concern {
-    .slick-prev {
-        font-size: 18px !important;
-        left: 0 !important;
-        width: 40px;
-        height: 40px;
-        // top: 24%;
-        &::before {
-            color: #fff;
-            content: "\e906";
-            font-family: "icomoon";
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #6f4c55;
-            border-radius: 50%;
-        }
-        @apply z-[5] text-primary;
-    }
+    // .slick-prev {
+    //     font-size: 18px !important;
+    //     left: 0 !important;
+    //     width: 40px;
+    //     height: 40px;
+    //     // top: 24%;
+    //     &::before {
+    //         color: #fff;
+    //         content: "\e906";
+    //         font-family: "icomoon";
+    //         width: 40px;
+    //         height: 40px;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         background-color: #6f4c55;
+    //         border-radius: 50%;
+    //     }
+    //     @apply z-[5] text-primary;
+    // }
     .slick-slider {
-        @apply pl-[44px];
+        @apply overflow-hidden;
         .slick-concern {
             width: auto !important;
             @apply mr-[8px];
@@ -130,14 +131,14 @@ html {
     .slick-current {
     }
 }
-.react-tabs__tab-list {
-    @apply border-0 mb-0;
-    .activeTab {
-        .menu-tab {
-            @apply bg-primary text-white;
-        }
+// .react-tabs__tab-list {
+// @apply border-0 mb-0;
+.activeTab {
+    .menu-tab {
+        @apply bg-primary text-white;
     }
 }
+// }
 /* Scroll Top
 -------------------------------------------------------------- */
 #scroll-top {

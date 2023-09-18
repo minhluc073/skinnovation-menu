@@ -69,19 +69,16 @@ export default function SkinConcernTab({ title, acIdx }) {
     slidesToScroll: 4,
     variableWidth: true,
     speed: 1000,
-    // infinite: true,
+    // infinite: false,
     // initialSlide: 1,
     // arrows: false,
     // buttons: false,
-    prevArrow: (
-      <a href="/">{/* <i className="icon-down text-primary"></i> */}</a>
-    ),
-    nextArrow: (
-      <a href="#">
-        <i className="far fa-angle-left hidden"></i>
-        {/* kkk */}
-      </a>
-    ),
+    // prevArrow: <a href="/">hhh</a>,
+    // nextArrow: (
+    //   <a href="#">
+    //     <i className="far fa-angle-left hidden"></i>
+    //   </a>
+    // ),
     // responsive: [
     //   {
     //     breakpoint: 1200,
@@ -132,7 +129,13 @@ export default function SkinConcernTab({ title, acIdx }) {
           selectedIndex={tabIndex}
           onSelect={(index) => setTabIndex(index)}
         >
-          <TabList>
+          <TabList className="flex items-center gap-[8px]">
+            <a
+              href="/"
+              className="btn-treatment inline-flex items-center w-[40px] h-[40px] shrink-0 justify-center rounded-[50%]"
+            >
+              <i className="icon-left text-white text-[18px]"></i>
+            </a>
             <Slider {...settings}>
               {dataSkinconcern.slice(0, 4).map((item, idx) => (
                 <CustomTab
@@ -140,7 +143,7 @@ export default function SkinConcernTab({ title, acIdx }) {
                   className={tabIndex === idx ? "activeTab" : ""}
                 >
                   <div className="w-auto slick-concern cursor-pointer">
-                    <div className="flex gap-[8px] items-center justify-between11 bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
+                    <div className="flex gap-[8px] items-center justify-between bg-light py-[8px] pl-[15px] pr-[8px] rounded-[24px] menu-tab">
                       <span className="text-[16px] leading-[24px]">
                         {item.title}
                       </span>
