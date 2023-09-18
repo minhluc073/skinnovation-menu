@@ -41,11 +41,28 @@ const TreatmentMenu = ({
 
   useEffect(() => {
     if (router?.query) {
-      let { id } = router?.query;
-      // console.log("idx", id);
-      setIsActiveIdx(id);
+      let { title } = router?.query;
+      switch (title) {
+        case "first-time":
+          setIsActiveIdx(0);
+          break;
+        case "for-regulars":
+          setIsActiveIdx(1);
+          break;
+        case "face":
+          setIsActiveIdx(2);
+          break;
+        case "lashes":
+          setIsActiveIdx(3);
+          break;
+        case "wedding-events":
+          setIsActiveIdx(4);
+          break;
+        default:
+          setIsActiveIdx(0);
+      }
     }
-  }, [router]);
+  }, [router, activeIdx]);
 
   return (
     <LayoutOne title="treatment type" className="-style-1">

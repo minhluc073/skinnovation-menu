@@ -16,6 +16,7 @@ import dataTreatment from "../../../data/treatment-menu/treatmentType";
 
 import AccordionTreatment from "../../../components/Sections/SkinConcerns/AccordionTreatment";
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const contentTab = [
   {
@@ -84,6 +85,8 @@ const contentTab = [
 ];
 
 export default function TreatmentTab({ title, acIdx }) {
+  const router = useRouter();
+
   const [filter, setFilter] = useState("Popular");
 
   const [tabIndex, setTabIndex] = useState(0);
@@ -124,6 +127,11 @@ export default function TreatmentTab({ title, acIdx }) {
               <Tab
                 key={item.id}
                 className="text-[16px] px-[16px] leading-[24px] py-[8px] cursor-pointer bg-light rounded-[24px] text-primary"
+                onClick={() => {
+                  router.replace({
+                    query: { ...router.query, title: item?.name },
+                  });
+                }}
               >
                 {item.title}
               </Tab>

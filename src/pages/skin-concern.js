@@ -37,13 +37,29 @@ const SkinConcern = ({
 
   const [activeIdx, setIsActiveIdx] = useState(0);
 
+  console.log("active", activeIdx);
+
   useEffect(() => {
     if (router?.query) {
-      let { id } = router?.query;
-      // console.log("idx", id);
-      setIsActiveIdx(id);
+      let { title } = router?.query;
+      switch (title) {
+        case "pigmentation":
+          setIsActiveIdx(0);
+          break;
+        case "acne-inflammation":
+          setIsActiveIdx(1);
+          break;
+        case "redness-sensitivity":
+          setIsActiveIdx(2);
+          break;
+        case "age-management":
+          setIsActiveIdx(3);
+          break;
+        default:
+          setIsActiveIdx(0);
+      }
     }
-  }, [router]);
+  }, [router, activeIdx]);
 
   return (
     <LayoutOne title="skin concern" className="-style-1">

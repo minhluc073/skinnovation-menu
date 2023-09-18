@@ -18,7 +18,7 @@ export default function SkinConcernOne({ title, center, data }) {
               href={{
                 pathname: "/skin-concern",
                 query: {
-                  id: idx, // pass the id
+                  title: item?.name, // pass the id
                 },
               }}
             >

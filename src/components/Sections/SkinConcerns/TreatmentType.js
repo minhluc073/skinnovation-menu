@@ -11,13 +11,13 @@ export default function TreatmentType({ title, center, data }) {
         {title}
       </h3>
       <ul className="mt-[32px] grid grid-cols-5 gap-4 max-md:mt-[16px] max-sm:gap-[8px] max-md:grid-cols-2">
-        {data?.slice(4, 9)?.map((item,idx) => (
+        {data?.slice(4, 9)?.map((item, idx) => (
           <li key={item.id} className="max-md:last:col-[1_/_span_2]">
             <Link
               href={{
                 pathname: "/treatment-type",
                 query: {
-                  id: idx, // pass the id
+                  title: item?.name, // pass the id
                 },
               }}
             >

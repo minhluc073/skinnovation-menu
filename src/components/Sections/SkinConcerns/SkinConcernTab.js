@@ -11,24 +11,28 @@ import AccordionTreatment from "../../../components/Sections/SkinConcerns/Accord
 
 const contentTab = [
   {
+    name: "pigmentation",
     id: 1,
     title: "Pigmentation",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
+    name: "acne-inflammation",
     id: 2,
     title: "Acne & Inflammation",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
+    name: "redness-sensitivity",
     id: 3,
     title: "Redness & Sensitivity",
     content:
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
   },
   {
+    name: "age-management",
     id: 4,
     title: "Age Management",
     content:
@@ -38,6 +42,8 @@ const contentTab = [
 
 export default function SkinConcernTab({ title, acIdx }) {
   // console.log("id-active", acIdx);
+
+  const router = useRouter();
 
   const [filter, setFilter] = useState("Popular");
 
@@ -139,7 +145,12 @@ export default function SkinConcernTab({ title, acIdx }) {
             <Slider {...settings}>
               {dataSkinconcern.slice(0, 4).map((item, idx) => (
                 <CustomTab
-                  onClick={() => setTabIndex(idx)}
+                  onClick={() => {
+                    setTabIndex(idx);
+                    router.replace({
+                      query: { ...router.query, title: item?.name },
+                    });
+                  }}
                   className={tabIndex === idx ? "activeTab" : ""}
                 >
                   <div className="w-auto slick-concern cursor-pointer">
