@@ -62,53 +62,29 @@ export default function SkinConcernTab({ title, acIdx }) {
     customPaging: function (i) {
       return <div className="slider__dot"></div>;
     },
-    // dots: true,
-    // infinite: true,
-    // lazyload: true,
-    // speed: 500,
-    // slidesToShow: 4,
-    // slidesToScroll: 1,
 
-    // centerMode: true,
-    // className: "slider variable-width",
     slidesToShow: 1,
     slidesToScroll: 4,
     variableWidth: true,
     speed: 1000,
-    // infinite: false,
-    // initialSlide: 1,
-    // arrows: false,
-    // buttons: false,
-    // prevArrow: <a href="/">hhh</a>,
-    // nextArrow: (
-    //   <a href="#">
-    //     <i className="far fa-angle-left hidden"></i>
-    //   </a>
-    // ),
-    // responsive: [
-    //   {
-    //     breakpoint: 1200,
-    //     settings: {},
-    //   },
-    //   {
-    //     breakpoint: 992,
-    //     settings: {
-    //       slidesToShow: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {},
+      },
+      {
+        breakpoint: 992,
+        settings: {},
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // speed: 5000,
+        },
+      },
+    ],
   };
 
   const CustomTab = ({ onClick, children, className }) => {
