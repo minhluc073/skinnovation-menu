@@ -37,8 +37,6 @@ const SkinConcern = ({
 
   const [activeIdx, setIsActiveIdx] = useState(0);
 
-  console.log("active", activeIdx);
-
   useEffect(() => {
     if (router?.query) {
       let { title } = router?.query;
@@ -63,8 +61,6 @@ const SkinConcern = ({
 
   return (
     <LayoutOne title="skin concern" className="-style-1">
-      {/* <HomeSlider data={slider} className="-style-1" showDots /> */}
-      {/* <MainHero data={introductionOne} /> */}
       <div className="max-w-[752px] mx-auto mt-[40px] max-sm:mt-[16px]">
         <div className="container">
           <h2 className="text-[40px] font-semibold leading-[40px] max-sm:text-center max-sm:text-[24px] max-sm:leading-[24px]">
@@ -75,11 +71,6 @@ const SkinConcern = ({
       <div className="mt-[40px] max-md:mt-[32px]">
         <SkinConcernTab title="Skin concerns" acIdx={activeIdx} />
       </div>
-      {/* <div className="mt-[48px] max-sm:mt-[24px] max-w-[752px] mx-auto">
-        <div className="container">
-          <AccordionTreatment data={dataTreatment} filter={filter} />
-        </div>
-      </div> */}
     </LayoutOne>
   );
 };

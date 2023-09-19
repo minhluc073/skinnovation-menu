@@ -41,16 +41,12 @@ const contentTab = [
 ];
 
 export default function SkinConcernTab({ title, acIdx }) {
-  // console.log("id-active", acIdx);
-
   const router = useRouter();
 
   const [filter, setFilter] = useState("Popular");
 
   const [tabIndex, setTabIndex] = useState(0);
   const [isActive, setIsActive] = useState(false);
-
-  // console.log("tabindex", tabIndex);
 
   useEffect(() => {
     if (acIdx) {
@@ -69,19 +65,10 @@ export default function SkinConcernTab({ title, acIdx }) {
     speed: 1000,
     responsive: [
       {
-        breakpoint: 1200,
-        settings: {},
-      },
-      {
-        breakpoint: 992,
-        settings: {},
-      },
-      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // speed: 5000,
         },
       },
     ],

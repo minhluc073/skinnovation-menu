@@ -54,34 +54,7 @@ const contentTab = [
       "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
     data: dataTreatment,
   },
-  // {
-  //   id: 6,
-  //   title: "Dermaplaning",
-  //   content:
-  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-  //   data: dataDermaplaning,
-  // },
-  // {
-  //   id: 7,
-  //   title: "Microcurrent facial",
-  //   content:
-  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-  //   data: dataMicrocurrent,
-  // },
-  // {
-  //   id: 8,
-  //   title: "Signature",
-  //   content:
-  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-  //   data: dataSignature,
-  // },
-  // {
-  //   id: 9,
-  //   title: "Body treatments",
-  //   content:
-  //     "Known for delivering immediate results for a variety of skin conditions — the LED HydraFacial is a must-try for",
-  //   data: dataBody,
-  // },
+
 ];
 
 export default function TreatmentTab({ title, acIdx }) {

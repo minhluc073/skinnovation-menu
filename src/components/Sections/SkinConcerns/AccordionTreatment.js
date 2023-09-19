@@ -3,8 +3,6 @@ import { useState } from "react";
 import { Collapse } from "react-collapse";
 
 export default function AccordionTreatment({ data, className, filter, mt }) {
-  console.log("filter", filter);
-
   const [isActive, setIsActive] = useState({
     status: false,
     key: null,
@@ -66,9 +64,6 @@ export default function AccordionTreatment({ data, className, filter, mt }) {
                   className={`${
                     isActive.key === item?.key
                   } pt-[24px] mt-[24px] border-t-[1px] border-dashed border-primary flex items-start gap-[16px] max-sm:flex-col max-sm:pt-[16px] max-sm:gap-[24px]`}
-                  // style={{
-                  //   display: `${isActive.key === item?.key ? "flex" : "none"}`,
-                  // }}
                 >
                   <div>
                     <p className="mb-[24px] text-[14px] leading-[24px] text-[#000]">
@@ -162,9 +157,6 @@ export default function AccordionTreatment({ data, className, filter, mt }) {
                         className={`${
                           isActive.key === item?.key
                         } pt-[24px] mt-[24px] border-t-[1px] border-dashed border-primary flex items-start gap-[16px] max-sm:flex-col max-sm:pt-[16px] max-sm:gap-[24px]`}
-                        // style={{
-                        //   display: `${isActive.key === item?.key ? "flex" : "none"}`,
-                        // }}
                       >
                         <div>
                           <p className="mb-[24px] text-[14px] leading-[24px] text-[#000]">
